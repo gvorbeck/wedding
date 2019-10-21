@@ -620,3 +620,21 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* MINE */
+header {
+    background: #DD4D28;
+    padding: 2rem 0;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+
+main {
+    background: #EBA4AC;
+    text-align: center;
+    padding: 5rem 0;
+}
