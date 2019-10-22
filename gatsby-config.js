@@ -1,7 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Krishanti and Garrett Are Getting Married`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Krishanti and Garrett`,
+    menuLinks: [
+        {
+            name: 'Home',
+            link: '/'
+        },
+        {
+            name: 'Our Story',
+            link: '/our-story'
+        },
+        {
+            name: 'When & Where',
+            link: '/details'
+        },
+        {
+            name: 'Registry',
+            link: '/registry'
+        }
+    ],
+    description: `We're getting married`,
     author: `@gatsbyjs`,
   },
   plugins: [
