@@ -8,7 +8,6 @@ const Header = ({ siteTitle, menuLinks }) => (
       <h1>
         <Link to="/">{siteTitle}</Link>
       </h1>
-      <div>
           <nav>
             <ul>
               {menuLinks.map(link => (
@@ -18,7 +17,6 @@ const Header = ({ siteTitle, menuLinks }) => (
               ))}
             </ul>
           </nav>
-        </div>
     </div>
   </header>
 )
