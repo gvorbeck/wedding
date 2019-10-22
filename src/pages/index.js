@@ -11,7 +11,7 @@ const IndexPage = props => (
     <SEO title="Home" />
     <h2>Site Coming Soon</h2>
     <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/our-story/">Go to our story</Link>
   </Layout>
 )
 
