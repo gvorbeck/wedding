@@ -1,0 +1,27 @@
+.site-header {
+    background-color: #DD4D28;
+    padding: 1rem 2rem;
+
+    &--title {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.99rem;
+        text-align: center;
+        margin: 0 0 1rem;
+    }
+
+    &--list {
+        display: flex;
+        justify-content: center;
+
+        li + li {
+            margin: 0 0 0 .5rem;
+            padding: 0 0 0 .5rem;
+            border-left: 1px solid #FFFFFF;
+        }
+    }
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}

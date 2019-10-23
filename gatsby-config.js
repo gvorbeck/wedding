@@ -3,10 +3,6 @@ module.exports = {
     title: `Krishanti and Garrett`,
     menuLinks: [
         {
-            name: 'Home',
-            link: '/'
-        },
-        {
             name: 'Our Story',
             link: '/our-story'
         },

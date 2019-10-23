@@ -9,9 +9,10 @@ import "./index.scss"
 const IndexPage = props => (
   <Layout>
     <SEO title="Home" />
-    <h2>Site Coming Soon</h2>
-    <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-    <Link to="/our-story/">Go to our story</Link>
+    <div>
+        <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+    </div>
+    {/*<Link to="/our-story/">Go to our story</Link>*/}
   </Layout>
 )
 

@@ -2,23 +2,23 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import headerStyles from "./header.module.scss"
+
 const Header = ({ siteTitle, menuLinks }) => (
-  <header>
-    <div>
-      <h1>
-        <Link to="/">{siteTitle}</Link>
-      </h1>
-          <nav>
-            <ul>
-              {menuLinks.map(link => (
-                <li key={link.name}>
-                  <Link style={{ color: `white` }} to={link.link}>{link.name}</Link>
-                </li>
-              ))}
+    <header className={headerStyles.siteHeader}>
+        <h1 className={headerStyles.siteHeaderTitle}>
+            <Link to="/">{siteTitle}</Link>
+        </h1>
+        <nav>
+            <ul className={headerStyles.siteHeaderList}>
+                {menuLinks.map(link => (
+                    <li key={link.name}>
+                        <Link style={{ color: `white` }} to={link.link}>{link.name}</Link>
+                    </li>
+                ))}
             </ul>
-          </nav>
-    </div>
-  </header>
+        </nav>
+    </header>
 )
 
 Header.propTypes = {
