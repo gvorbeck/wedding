@@ -1,49 +1,50 @@
 module.exports = {
-  siteMetadata: {
-    title: `Krishanti and Garrett`,
-    menuLinks: [
+    siteMetadata: {
+        title: `Krishanti and Garrett`,
+        menuLinks: [
+            {
+                name: 'Our Story',
+                link: '/our-story'
+            },
+            {
+                name: 'When & Where',
+                link: '/details'
+            },
+            {
+                name: 'Registry',
+                link: '/registry'
+            }
+        ],
+        description: `We're getting married`,
+        author: `@gatsbyjs`,
+    },
+    plugins: [
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-sass`,
         {
-            name: 'Our Story',
-            link: '/our-story'
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
         },
+        `gatsby-transformer-sharp`,
+        `gatsby-transformer-remark`,
+        `gatsby-plugin-sharp`,
         {
-            name: 'When & Where',
-            link: '/details'
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `gatsby-starter-default`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: `#663399`,
+                theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+            },
         },
-        {
-            name: 'Registry',
-            link: '/registry'
-        }
+        // this (optional) plugin enables Progressive Web App + Offline functionality
+        // To learn more, visit: https://gatsby.dev/offline
+        // `gatsby-plugin-offline`,
     ],
-    description: `We're getting married`,
-    author: `@gatsbyjs`,
-  },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
 }
