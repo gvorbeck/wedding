@@ -1,9 +1,52 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
-section {
-    p:first-child {
-        color: map-get($colors, green);
-        font-size: 2rem;
-        font-family: 'Bree Serif', serif;
+main > * {
+    padding: 0 1rem;
+}
+
+.bubble {
+    color: map-get($colors, green);
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+    background-color: map-get($colors, pink);
+    padding: 1rem;
+    border-radius: .5rem;
+    position: relative;
+    margin: 0 0 3rem;
+
+    &::after {
+        @include pseudo;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border: 2rem solid transparent;
+        border-top-color: map-get($colors, pink);
+        border-bottom: 0;
+        margin-bottom: -2rem;
     }
+
+    &.right {
+        margin-left: 4rem;
+
+        &::after {
+            right: 4rem;
+            border-right: 0;
+            margin-right: -2rem;
+        }
+    }
+
+    &.left {
+        margin-right: 4rem;
+
+        &::after {
+            left: 4rem;
+            border-left: 0;
+            margin-left: -2rem;
+        }
+    }
+}
+
+p + .bubble {
+    margin-top: 2rem;
 }
