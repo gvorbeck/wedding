@@ -1,11 +1,30 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import "./our-story.scss"
 
-const OurStoryPage = props => (
+export default ({ data }) => (
     <Layout>
-        <h1>Our Story</h1>
+    {data.allMarkdownRemark.edges.map(({ node }) => (
+        <article>
+            {/*}<h1>{node.frontmatter.title}</h1>*/}
+            <section dangerouslySetInnerHTML={{ __html: node.html }} />
+        </article>
+    ))}
     </Layout>
 )
 
-export default OurStoryPage
+export const query = graphql`
+    {
+      allMarkdownRemark(filter: {frontmatter: {title: {eq: "Our Story"}}}) {
+        edges {
+          node {
+            frontmatter {
+              title
+            }
+            html
+          }
+        }
+      }
+    }
+`
