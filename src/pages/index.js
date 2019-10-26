@@ -4,12 +4,12 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "./index.scss"
+import indexStyles from "./index.module.scss"
 
 export default ({ data }) => (
   <Layout pageName="page--home">
     <SEO title="Home" />
-    <div>
+    <div className={indexStyles.splash}>
         <Img fluid={data.imageOne.childImageSharp.fluid} />
     </div>
   </Layout>

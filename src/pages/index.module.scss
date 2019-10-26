@@ -1,0 +1,8 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.splash {
+    // Extend splash styles here so that it can be used in other places.
+    background: red;
+    position: relative;
+}
