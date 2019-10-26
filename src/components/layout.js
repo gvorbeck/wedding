@@ -14,7 +14,7 @@ import "./layout.scss"
 
 import Header from "./header"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageName }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className={pageName}>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer>
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-    </>
+    </div>
   )
 }
 

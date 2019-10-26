@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import "./our-story.scss"
 
 export default ({ data }) => (
-    <Layout>
+    <Layout pageName="page--story">
     {data.allMarkdownRemark.edges.map(({ node }) => (
         <article>
             {/*}<h1>{node.frontmatter.title}</h1>*/}

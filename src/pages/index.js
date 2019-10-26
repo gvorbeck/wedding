@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import "./index.scss"
 
 export default ({ data }) => (
-  <Layout>
+  <Layout pageName="page--home">
     <SEO title="Home" />
     <div>
         <Img fluid={data.imageOne.childImageSharp.fluid} />
