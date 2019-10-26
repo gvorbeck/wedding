@@ -1,0 +1,9 @@
+@import "../styles/variables.scss";
+
+section {
+    p:first-child {
+        color: map-get($colors, green);
+        font-size: 2rem;
+        font-family: 'Bree Serif', serif;
+    }
+}
