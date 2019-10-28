@@ -13,7 +13,7 @@ const Header = ({ siteTitle, menuLinks }) => (
             <ul className={headerStyles.siteHeaderList}>
                 {menuLinks.map(link => (
                     <li key={link.name}>
-                        <Link style={{ color: `white` }} to={link.link}>{link.name}</Link>
+                        <span><Link style={{ color: `white` }} to={link.link}>{link.name}</Link></span>
                     </li>
                 ))}
             </ul>

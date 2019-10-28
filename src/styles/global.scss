@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans&display=swap');
 @import "../styles/variables.scss";
 @import "../styles/mixins.scss";
+@import "../styles/functions.scss";
 
 //https://coolors.co/eba4ac-dd4d28-364f28-393e41-e7e5df
 
 body {
     background: map-get($colors, off-white);
+    font-family: 'Open Sans', sans-serif;
 }
 
 main {
-    font-family: 'Open Sans', sans-serif;
 
     p {
         line-height: 1.5;

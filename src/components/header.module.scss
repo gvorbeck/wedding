@@ -1,9 +1,30 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+@import "../styles/functions.scss";
+
 
 .site-header {
     background-color: map-get($colors, red);
     padding: 1rem 2rem;
     // margin: 0 0 2rem;
+    color: map-get($colors, off-white);
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        background-image: url(../images/paisley.jpg);
+        background-size: cover;
+        opacity: .65;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+    }
+
+    & > * {
+        position: relative;
+    }
 
     &--title {
         font-family: 'Bree Serif', serif;
@@ -15,11 +36,21 @@
     &--list {
         display: flex;
         justify-content: center;
+        list-style: disc;
+
+        span {
+            position: relative;
+            left: rem(-5px);
+        }
+
+        li:first-child {
+            list-style-type: none;
+        }
 
         li + li {
-            margin: 0 0 0 .5rem;
-            padding: 0 0 0 .5rem;
-            border-left: 1px solid #FFFFFF;
+            margin: 0 0 0 1.25rem;
+            // padding: 0 0 0 .5rem;
+            // border-left: 1px solid #FFFFFF;
         }
     }
 
