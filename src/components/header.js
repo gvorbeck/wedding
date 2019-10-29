@@ -4,6 +4,7 @@ import React from "react"
 
 import headerStyles from "./header.module.scss"
 
+
 const Header = ({ siteTitle, menuLinks }) => (
     <header className={headerStyles.siteHeader}>
         <h1 className={headerStyles.siteHeaderTitle}>

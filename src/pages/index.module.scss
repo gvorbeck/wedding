@@ -1,8 +1,31 @@
 @import "../styles/variables.scss";
 @import "../styles/mixins.scss";
 
-.splash {
-    // Extend splash styles here so that it can be used in other places.
-    background: red;
-    position: relative;
+.advert {
+    display: grid;
+    grid-template: repeat(3, auto) / auto 25%;
+    grid-column-gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: map-get($colors, green);
+    border: 0 solid map-get($colors, off-white);
+    color: map-get($colors, pink);
+    border-top-width: .25rem;
+    border-bottom-width: .25rem;
+
+    img {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+
+    span,
+    h2,
+    h3 {
+        grid-column: 1 / 2;
+        line-height: 1.25;
+    }
+
+    span {
+        font-size: 1.25rem;
+        font-family: 'Bree Serif', serif;
+    }
 }
