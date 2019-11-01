@@ -4,15 +4,15 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import FireSVG from "../components/fireSVG"
 import indexStyles from "./index.module.scss"
 
-import fireSVG from "../images/yagna.svg"
 
 export default ({ data }) => (
   <Layout pageName="page--home">
     <SEO title="Home" />
     <div className={indexStyles.advert}>
-        <img alt="yagna" src={fireSVG} />
+        <FireSVG />
         <span>We're getting married!</span>
         <h2>Junetember 71st, 2020</h2>
         <h3>Farmsdale Village Landfill</h3>
