@@ -20,11 +20,52 @@ main {
     p + p {
         margin-top: 1rem;
     }
+
+    .page--title {
+        font-family: 'Bree Serif', serif;
+        font-size: 2rem;
+        margin: 2rem 1rem;
+        padding: 1rem;
+        border: rem(2px) dashed map-get($colors, red);
+        color: map-get($colors, off-white);
+        background-color: map-get($colors, green);
+        position: relative;
+
+        &::before {
+            @include pseudo;
+            background-image: url(../images/pattern.svg);
+            background-repeat: repeat-x;
+            background-size: auto 80%;
+            background-position: center center;
+            opacity: .25;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
 }
 
 footer {
     text-align: center;
     margin: 1rem 0 0;
+}
+
+// Story styles in global because some classnames are in markdown and cannot generate module classnames.
+.story {
+
+    &--section {
+        padding: 0 1rem 1rem;
+
+        & + .story--section {
+            padding: 2rem 1rem 1rem;
+        }
+
+        &:nth-child(even) {
+            background-color: map-get($colors, gray);
+            color: map-get($colors, off-white);
+        }
+    }
 }
 
 .bubble {

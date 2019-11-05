@@ -2,13 +2,15 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import ourStoryStyles from "./our-story.module.scss"
+import SEO from "../components/seo"
+
 
 export default ({ data }) => (
     <Layout pageName="page--story">
+    <SEO title="Our Story" />
     {data.allMarkdownRemark.edges.map(({ node, i }) => (
-        <article key={node.id} className={ourStoryStyles.article}>
-            <h1>{node.frontmatter.title}</h1>
+        <article key={node.id} className="story">
+            <h1 className="page--title">{node.frontmatter.title}</h1>
             <section dangerouslySetInnerHTML={{ __html: node.html }} />
         </article>
     ))}

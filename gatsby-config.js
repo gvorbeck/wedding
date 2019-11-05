@@ -16,7 +16,7 @@ module.exports = {
             }
         ],
         description: `We're getting married`,
-        author: `@gatsbyjs`,
+        author: `@jgvorbeck`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
