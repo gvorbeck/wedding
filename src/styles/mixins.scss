@@ -26,7 +26,7 @@ $media--xlarge: rem(1440px);
   //   }
   // }
   @if $size == m {
-    @media only screen and (min-width: map-get($breakpoints, 1)) and (max-width: map-get($breakpoints, 2)) {
+    @media only screen and (min-width: map-get($breakpoints, 1)) {
       @content;
     }
   }
