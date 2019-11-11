@@ -55,6 +55,10 @@ footer {
     &--section {
         padding: 0 1rem 1rem;
 
+        @include media(m) {
+            overflow: hidden;
+        }
+
         & + .story--section {
             padding: 2rem 1rem 1rem;
         }
@@ -76,6 +80,10 @@ footer {
     position: relative;
     margin: 0 0 3rem;
 
+    @include media(m) {
+        max-width: 20rem;
+    }
+
     &::after {
         @include pseudo;
         bottom: 0;
@@ -90,6 +98,10 @@ footer {
     &.right {
         margin-left: 4rem;
 
+        @include media(m) {
+            float: right;
+        }
+
         &::after {
             right: 4rem;
             border-right: 0;
@@ -99,6 +111,10 @@ footer {
 
     &.left {
         margin-right: 4rem;
+
+        @include media(m) {
+            float: left;
+        }
 
         &::after {
             left: 4rem;
