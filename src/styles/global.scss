@@ -1,5 +1,5 @@
 @import "../styles/reset.scss";
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,400i,700|IBM+Plex+Serif:400,400i&display=swap');
 @import "../styles/variables.scss";
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
@@ -7,11 +7,12 @@
 //https://coolors.co/eba4ac-dd4d28-364f28-393e41-e7e5df
 
 body {
-    background: map-get($colors, off-white);
-    font-family: 'IBM Plex Sans', sans-serif;
+    @include font();
+    background-color: map-get($colors, off-white);
 }
 
 main {
+    margin-top: rem(75px);
 
     p {
         line-height: 1.5;
@@ -28,19 +29,6 @@ main {
         border-bottom: rem(2px) solid map-get($colors, pink);
         color: map-get($colors, green);
         position: relative;
-
-        // &::before {
-        //     @include pseudo;
-        //     background-image: url(../images/pattern.svg);
-        //     background-repeat: repeat-x;
-        //     background-size: auto 80%;
-        //     background-position: center center;
-        //     opacity: .25;
-        //     left: 0;
-        //     right: 0;
-        //     top: 0;
-        //     bottom: 0;
-        // }
     }
 }
 

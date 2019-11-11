@@ -4,6 +4,17 @@
   position: $pos;
 }
 
+
+@mixin font($font-size: false, $color: false, $font-weight:false, $font-style: false, $line-height: false, $sans: true) {
+    @if $font-size { font-size: $font-size; }
+    @if $color { color: $color; }
+    @if $font-weight { font-weight: $font-weight; }
+    @if $line-height { line-height: $line-height; }
+    @if $font-style { font-style: $font-style; }
+    @if $sans { font-family: 'IBM Plex Sans', sans-serif; }
+    @else { font-family: 'IBM Plex Serif', serif; }
+}
+
 // BREAKPOINTS
 $breakpoints: (
     1: 480px,
@@ -12,21 +23,21 @@ $breakpoints: (
 );
 
 @mixin media($size) {
-  // @if $size == s {
-  //   @media only screen and (min-width: $media--small) and (max-width: $media--medium - 1) {
-  //     @content;
-  //   }
-  // }
-  // @else if $size == sm {
-  //   @media only screen and (min-width: $media--small) and (max-width: $media--large - 1) {
-  //     @content;
-  //   }
-  // }
-  @if $size == m {
-    @media only screen and (min-width: map-get($breakpoints, 2)) {
-      @content;
+    @if $size == a {
+        @media only screen and (min-width: map-get($breakpoints, 1)) {
+            @content;
+        }
     }
-  }
+    @if $size == m {
+        @media only screen and (min-width: map-get($breakpoints, 2)) {
+            @content;
+        }
+    }
+    @else if $size == l {
+        @media only screen and (min-width: map-get($breakpoints, 3)) {
+            @content;
+        }
+    }
   // @else if $size == ml {
   //   @media only screen and (min-width: $media--medium) {
   //     @content;

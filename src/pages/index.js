@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import HandSVG from "../components/handSVG"
 import indexStyles from "./index.module.scss"
 
 
@@ -21,7 +20,8 @@ export default ({ data }) => (
     </div>
     <Img fluid={data.imageOne.childImageSharp.fluid} />
     <section className={indexStyles.intro}>
-        <HandSVG />
+        {/*<HandSVG />*/}
+        <Img fluid={data.imageTwo.childImageSharp.fluid} />
         <p><span className={indexStyles.name}>Krishanti Daryanani</span> and <span className={indexStyles.name}>Garrett Vorbeck</span></p>
     </section>
   </Layout>
@@ -32,6 +32,13 @@ export const query = graphql`
     imageOne: file(relativePath: { eq: "faces.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    imageTwo: file(relativePath: { eq: "wedding-couple.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }

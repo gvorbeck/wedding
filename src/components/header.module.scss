@@ -4,33 +4,40 @@
 
 
 .site-header {
+    $header-height: #{rem(75px)};
+    @include font($color: map-get($colors, off-white));
     background-color: map-get($colors, green);
     padding: 1rem 0;
-    color: map-get($colors, off-white);
-    position: relative;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: $header-height;
+    box-sizing: border-box;
+    top: 0;
 
     svg {
-        height: 3rem;
+        height: calc(#{$header-height} - .25rem);
         position: absolute;
-        top: .2rem;
-        left: calc(50% - 25px);
+        top: calc(50% - (#{$header-height} - .25rem) / 2);
+        left: calc(50% - (#{$header-height} - .25rem) / 2);
         fill: rgba(255,255,255,.3);
     }
 
     &__title {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 1.388rem;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        font-size: 6.25vw;
         text-align: center;
-        margin: 0 1rem 0 4rem;
-        position: relative;
+        line-height: $header-height;
 
         @include media(m) {
-            margin: 0 1rem 1rem;
+            // margin: 0 1rem 1rem;
         }
     }
 
     a {
-        color: map-get($colors, pink);
+        @include font($color: map-get($colors, pink));
         text-decoration: none;
         text-transform: uppercase;
     }
@@ -59,6 +66,7 @@
             & ~ .navigation__list {
                 z-index: 2;
                 opacity: 1;
+                top: 0;
             }
 
             & ~ .navigation__label .navigation__icon {
@@ -75,11 +83,11 @@
 
     &__label {
         $dim: 2rem;
-        width: $dim;
+        width: 2.5rem;
         height: $dim;
         display: block;
         position: absolute;
-        top: .75rem;
+        top: calc(#{rem(75px)} / 2 - (#{$dim} / 2));
         left: 1.25rem;
         z-index: 3;
 
@@ -89,16 +97,16 @@
     }
 
     &__icon {
-        $dim: rem(2px);
-        $pos: rem(-8px);
+        $height: #{rem(4px)};
+        $position: -.75rem;
         position: relative;
-        top: calc(50% - (#{$dim} / 2));
+        top: calc(50% - (#{$height} / 2));
 
         &,
         &::before,
         &::after {
             width: 100%;
-            height: $dim;
+            height: $height;
             background: map-get($colors, pink);
             transition: all 0.5s ease-out;
         }
@@ -109,11 +117,11 @@
         }
 
         &::before {
-            top: $pos;
+            top: $position;
         }
 
         &::after {
-            bottom: $pos;
+            bottom: $position;
         }
     }
 
@@ -128,6 +136,7 @@
         box-sizing: border-box;
         text-align: center;
         transition: opacity .75s ease-out;
+        top: -9999px;
 
         @include media(m) {
             position: relative;
@@ -141,24 +150,21 @@
     }
 
     &__list-item {
-        font-size: 2rem;
-        line-height: 1;
-
-        @include media(m) {
-            line-height: 1rem;
-        }
+        @include font($font-size: 2rem, $line-height: 1rem);
 
         a {
             color: map-get($colors, green);
 
             @include media(m) {
-                color: map-get($colors, pink);
-                font-size: 1rem;
+                @include font($color: map-get($colors, pink), $font-size: 1rem);
+            }
+            @include media(l) {
+                padding: .25rem .5rem;
             }
         }
 
         & + .navigation__list-item {
-            margin-top: 1.5rem;
+            margin-top: 3rem;
 
             @include media(m) {
                 margin: 0;

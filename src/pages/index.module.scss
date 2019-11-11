@@ -6,14 +6,17 @@
     position: absolute;
     z-index: 1;
     color: map-get($colors, off-white);
+    font-weight: bold;
+    opacity: .85;
     width: 100%;
     text-align: center;
-    padding: 1rem;
     box-sizing: border-box;
+    text-transform: uppercase;
 
     div {
+        padding: 1rem;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     h2 {
@@ -33,44 +36,54 @@
     }
 
     p {
-        margin: 3rem .5rem;
-        font-size: 1.5rem;
-        line-height: 1;
-        text-transform: uppercase;
-        display: inline-block;
+        @include font($font-size: 10.45vw, $line-height: 1);
+        margin: 0 1rem 0;
+        // display: inline-block;
+        border: .5rem solid;
+        padding: .25rem .5rem;
 
         span {
-            font-size: 2.5rem;
-            border-bottom: .2rem solid;
+            @include font($font-size: 16.62vw);
             display: block;
         }
     }
 }
 
 .intro {
-    border-top: .25rem solid map-get($colors, green);
-    padding: 2rem 0;
+    background-color: map-get($colors, green);
     text-align: center;
+    text-transform: uppercase;
     position: relative;
+    overflow: hidden;
+    font-style: italic;
 
-    svg {
-        fill: map-get($colors, pink);
-        height: 20rem;
-        position: relative;
-        left: -.5rem;
+    &::before {
+        @include pseudo;
+        width: 100vw;
+        height: 100vw;
+        background-color: map-get($colors, off-white);
+        transform: rotate(45deg);
+        top: 0;
     }
 
     p {
         position: absolute;
-        top: 2rem;
-        padding: 0 1rem;
-        box-sizing: border-box;
+        top: 0;
+        bottom: 0;
+        margin-top: 3vw;
+        font-size: 8vw;
         width: 100%;
+        color: map-get($colors, red);
     }
 
     .name {
-        font-size: 3rem;
+        font-size: 12vw;
         display: block;
-        text-transform: uppercase;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    img {
+        margin-top: .5rem
     }
 }
