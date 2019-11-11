@@ -1,5 +1,5 @@
 @import "../styles/reset.scss";
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Open+Sans&display=swap');
 @import "../styles/variables.scss";
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
@@ -22,27 +22,26 @@ main {
     }
 
     .page--title {
-        font-family: 'Bree Serif', serif;
+        font-family: 'IBM Plex Sans', sans-serif;
         font-size: 2rem;
         margin: 2rem 1rem;
-        padding: 1rem;
-        border: rem(2px) dashed map-get($colors, red);
-        color: map-get($colors, off-white);
-        background-color: map-get($colors, green);
+        padding: 0 0 .5rem;
+        border-bottom: rem(2px) solid map-get($colors, pink);
+        color: map-get($colors, green);
         position: relative;
 
-        &::before {
-            @include pseudo;
-            background-image: url(../images/pattern.svg);
-            background-repeat: repeat-x;
-            background-size: auto 80%;
-            background-position: center center;
-            opacity: .25;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-        }
+        // &::before {
+        //     @include pseudo;
+        //     background-image: url(../images/pattern.svg);
+        //     background-repeat: repeat-x;
+        //     background-size: auto 80%;
+        //     background-position: center center;
+        //     opacity: .25;
+        //     left: 0;
+        //     right: 0;
+        //     top: 0;
+        //     bottom: 0;
+        // }
     }
 }
 
@@ -71,7 +70,7 @@ footer {
 .bubble {
     color: map-get($colors, green);
     font-size: 2rem;
-    font-family: 'Bree Serif', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     background-color: map-get($colors, pink);
     padding: 1rem;
     border-radius: .5rem;

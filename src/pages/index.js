@@ -14,8 +14,10 @@ export default ({ data }) => (
     <div className={indexStyles.advert}>
         <FireSVG />
         <span>We're getting married!</span>
-        <h2>Junetember 71st, 2020</h2>
-        <h3>Farmsdale Village Landfill</h3>
+        <div>
+            <h2>September 5th, 2020</h2>
+            <h3>Unionville Vineyards</h3>
+        </div>
     </div>
     <Img fluid={data.imageOne.childImageSharp.fluid} />
   </Layout>

@@ -1,18 +1,30 @@
 module.exports = {
     siteMetadata: {
-        title: `Krishanti and Garrett`,
+        title: `Krishanti & Garrett`,
         menuLinks: [
             {
                 name: 'Our Story',
                 link: '/our-story'
             },
             {
-                name: 'When & Where',
-                link: '/details'
+                name: 'Schedule',
+                link: '/schedule'
+            },
+            {
+                name: 'Travel',
+                link: '/travel'
             },
             {
                 name: 'Registry',
                 link: '/registry'
+            },
+            {
+                name: 'Things to Do',
+                link: '/things-to-do'
+            },
+            {
+                name: 'FAQs',
+                link: '/faq'
             }
         ],
         description: `We're getting married`,

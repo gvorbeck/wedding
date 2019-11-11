@@ -7,14 +7,18 @@ import headerStyles from "./header.module.scss"
 
 const Header = ({ siteTitle, menuLinks }) => (
     <header className={headerStyles.siteHeader}>
-        <h1 className={headerStyles.siteHeaderTitle}>
+        <h1 className={headerStyles.siteHeader__title}>
             <Link to="/">{siteTitle}</Link>
         </h1>
-        <nav>
-            <ul className={headerStyles.siteHeaderList}>
+        <nav className={headerStyles.navigation}>
+            <input type="checkbox" id="navigation-input" className={headerStyles.navigation__input} />
+            <label for="navigation-input" className={headerStyles.navigation__label}>
+                <div className={headerStyles.navigation__icon} />
+            </label>
+            <ul className={headerStyles.navigation__list}>
                 {menuLinks.map(link => (
-                    <li key={link.name}>
-                        <span><Link style={{ color: `white` }} to={link.link}>{link.name}</Link></span>
+                    <li className={headerStyles.navigation__listItem} key={link.name}>
+                        <span><Link to={link.link}>{link.name}</Link></span>
                     </li>
                 ))}
             </ul>
