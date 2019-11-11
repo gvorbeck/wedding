@@ -6,13 +6,10 @@
 
 // BREAKPOINTS
 $breakpoints: (
-    1: 768px,
-    2: 1024px
+    1: 480px,
+    2: 768px,
+    3: 1024px
 );
-$media--small: 320px;
-$media--medium: 768px;
-$media--large: 1024px;
-$media--xlarge: rem(1440px);
 
 @mixin media($size) {
   // @if $size == s {
@@ -26,7 +23,7 @@ $media--xlarge: rem(1440px);
   //   }
   // }
   @if $size == m {
-    @media only screen and (min-width: map-get($breakpoints, 1)) {
+    @media only screen and (min-width: map-get($breakpoints, 2)) {
       @content;
     }
   }

@@ -1,5 +1,5 @@
 @import "../styles/reset.scss";
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 @import "../styles/variables.scss";
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
@@ -8,7 +8,7 @@
 
 body {
     background: map-get($colors, off-white);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 main {
@@ -22,7 +22,6 @@ main {
     }
 
     .page--title {
-        font-family: 'IBM Plex Sans', sans-serif;
         font-size: 2rem;
         margin: 2rem 1rem;
         padding: 0 0 .5rem;

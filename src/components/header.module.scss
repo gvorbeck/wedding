@@ -9,21 +9,12 @@
     color: map-get($colors, off-white);
     position: relative;
 
-    &::before {
-        @include pseudo;
-        background-image: url(../images/pattern.svg);
-        background-repeat: no-repeat;
-        background-size: auto 80%;
-        background-position: center;
-        opacity: .25;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-
-    & > * {
-        position: relative;
+    svg {
+        height: 3rem;
+        position: absolute;
+        top: .2rem;
+        left: calc(50% - 25px);
+        fill: rgba(255,255,255,.3);
     }
 
     &__title {
@@ -31,6 +22,7 @@
         font-size: 1.388rem;
         text-align: center;
         margin: 0 1rem 0 4rem;
+        position: relative;
 
         @include media(m) {
             margin: 0 1rem 1rem;
@@ -65,7 +57,7 @@
             }
 
             & ~ .navigation__list {
-                z-index: 1;
+                z-index: 2;
                 opacity: 1;
             }
 
@@ -89,7 +81,7 @@
         position: absolute;
         top: .75rem;
         left: 1.25rem;
-        z-index: 2;
+        z-index: 3;
 
         @include media(m) {
             display: none;
