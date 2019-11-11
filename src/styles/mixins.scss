@@ -3,3 +3,46 @@
   display: $display;
   position: $pos;
 }
+
+// BREAKPOINTS
+$breakpoints: (
+    1: 768px,
+    2: 1024px
+);
+$media--small: 320px;
+$media--medium: 768px;
+$media--large: 1024px;
+$media--xlarge: rem(1440px);
+
+@mixin media($size) {
+  // @if $size == s {
+  //   @media only screen and (min-width: $media--small) and (max-width: $media--medium - 1) {
+  //     @content;
+  //   }
+  // }
+  // @else if $size == sm {
+  //   @media only screen and (min-width: $media--small) and (max-width: $media--large - 1) {
+  //     @content;
+  //   }
+  // }
+  @if $size == m {
+    @media only screen and (min-width: map-get($breakpoints, 1)) and (max-width: map-get($breakpoints, 2)) {
+      @content;
+    }
+  }
+  // @else if $size == ml {
+  //   @media only screen and (min-width: $media--medium) {
+  //     @content;
+  //   }
+  // }
+  // @else if $size == l {
+  //   @media only screen and (min-width: $media--large) {
+  //     @content;
+  //   }
+  // }
+  // @else if $size == xl {
+  //     @media only screen and (min-width: $media--xlarge) {
+  //         @content;
+  //     }
+  // }
+}

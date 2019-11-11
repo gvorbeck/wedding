@@ -31,26 +31,11 @@
         font-size: 1.388rem;
         text-align: center;
         margin: 0 1rem 0 4rem;
-    }
 
-    // &--list {
-    //     display: flex;
-    //     justify-content: center;
-    //     list-style: disc;
-    //
-    //     span {
-    //         position: relative;
-    //         left: rem(-5px);
-    //     }
-    //
-    //     li:first-child {
-    //         list-style-type: none;
-    //     }
-    //
-    //     li + li {
-    //         margin: 0 0 0 1.25rem;
-    //     }
-    // }
+        @include media(m) {
+            margin: 0 1rem 1rem;
+        }
+    }
 
     a {
         color: map-get($colors, pink);
@@ -63,6 +48,10 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @include media(m) {
+        position: static;
+    }
 
     &__input {
         display: none;
@@ -101,6 +90,10 @@
         top: .75rem;
         left: 1.25rem;
         z-index: 2;
+
+        @include media(m) {
+            display: none;
+        }
     }
 
     &__icon {
@@ -125,18 +118,10 @@
 
         &::before {
             top: $pos;
-
-            // @include media(ml) {
-            //     top: rem(-8px);
-            // }
         }
 
         &::after {
             bottom: $pos;
-
-            // @include media(ml) {
-            //     bottom: rem(-8px);
-            // }
         }
     }
 
@@ -151,18 +136,41 @@
         box-sizing: border-box;
         text-align: center;
         transition: opacity .75s ease-out;
+
+        @include media(m) {
+            position: relative;
+            opacity: 1;
+            z-index: auto;
+            background-color: transparent;
+            display: flex;
+            padding: 0;
+            justify-content: space-evenly;
+        }
     }
 
     &__list-item {
         font-size: 2rem;
         line-height: 1;
 
+        @include media(m) {
+            line-height: 1rem;
+        }
+
         a {
             color: map-get($colors, green);
+
+            @include media(m) {
+                color: map-get($colors, pink);
+                font-size: 1rem;
+            }
         }
 
         & + .navigation__list-item {
             margin-top: 1.5rem;
+
+            @include media(m) {
+                margin: 0;
+            }
         }
     }
 }
