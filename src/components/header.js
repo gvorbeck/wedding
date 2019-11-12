@@ -8,7 +8,7 @@ import FireSVG from "../components/fireSVG"
 const Header = ({ siteTitle, menuLinks }) => (
     <header className={headerStyles.siteHeader}>
         <FireSVG />
-        <h1 className={headerStyles.siteHeader__title}><Link to="/">{siteTitle}</Link></h1>
+        <h1 className={headerStyles.siteHeader__title}><Link to="/">K + G{/*siteTitle*/}</Link></h1>
         <nav className={headerStyles.navigation}>
             <input type="checkbox" id="navigation-input" className={headerStyles.navigation__input} />
             <label for="navigation-input" className={headerStyles.navigation__label}>

@@ -59,11 +59,13 @@
 
     &::before {
         @include pseudo;
-        width: 100vw;
-        height: 100vw;
+        width: 70vw;
+        height: 70vw;
         background-color: map-get($colors, off-white);
-        transform: rotate(45deg);
-        top: 0;
+        // transform: rotate(45deg);
+        top: calc(50% - 35vw);
+        left: calc(50% - 35vw);
+        z-index: 1
     }
 
     p {
@@ -74,6 +76,7 @@
         font-size: 8vw;
         width: 100%;
         color: map-get($colors, red);
+        z-index: 1;
     }
 
     .name {
@@ -84,6 +87,102 @@
     }
 
     img {
-        margin-top: .5rem
+        margin-top: .5rem;
+        z-index: 1;
+    }
+}
+
+.info {
+    background-color: map-get($colors, pink);
+    padding: 1rem;
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: rem(75px) 0 0 100vw;
+        border-color: transparent transparent transparent map-get($colors, off-white);
+        bottom: 0;
+        left: 0;
+    }
+
+    &::after {
+        $dim: #{rem(75px)};
+        @include pseudo;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $dim 0 0 100vw;
+        border-color: transparent transparent transparent map-get($colors, pink);
+        top: -$dim;
+        left: 0;
+    }
+
+    .date {
+        border: rem(5px) solid #000;
+        display: inline-block;
+        padding: 0 .5rem;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            @include pseudo;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            background-color: map-get($colors, off-white);
+            top: 74%;
+            z-index: -1;
+        }
+
+        span {
+            display: block;
+
+            &:nth-child(1) {
+                font-size: 11vw;
+            }
+
+            &:nth-child(2) {
+                font-size: 13vw;
+                border-top: rem(5px) solid #000;
+            }
+        }
+    }
+
+    .img-couple {
+        mix-blend-mode: multiply;
+        z-index: 1;
+        opacity: .6;
+    }
+
+    .location {
+        position: absolute;
+        bottom: 24%;
+        color: map-get($colors, green);
+        font-weight: bold;
+        z-index: 1;
+        padding: 0 1rem;
+
+        span {
+            display: block;
+            line-height: 1;
+            // text-shadow:
+            //    -1px -1px 0 map-get($colors, off-white),
+            //     1px -1px 0 map-get($colors, off-white),
+            //     -1px 1px 0 map-get($colors, off-white),
+            //      1px 1px 0 map-get($colors, off-white);
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                font-size: 18vw;
+            }
+
+            &:nth-child(3) {
+                font-size: 15vw;
+            }
+        }
     }
 }

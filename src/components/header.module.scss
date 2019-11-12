@@ -11,15 +11,16 @@
     position: fixed;
     z-index: 2;
     width: 100%;
-    height: $header-height;
+    height: 16vw;
     box-sizing: border-box;
     top: 0;
 
     svg {
-        height: calc(#{$header-height} - .25rem);
+        $dim: 15vw;
+        height: $dim;
         position: absolute;
-        top: calc(50% - (#{$header-height} - .25rem) / 2);
-        left: calc(50% - (#{$header-height} - .25rem) / 2);
+        top: calc(50% - #{$dim} / 2);
+        left: calc(50% - #{$dim} / 2);
         fill: rgba(255,255,255,.3);
     }
 
@@ -29,7 +30,7 @@
         width: 100%;
         font-size: 6.25vw;
         text-align: center;
-        line-height: $header-height;
+        line-height: 16vw;
 
         @include media(m) {
             // margin: 0 1rem 1rem;
@@ -40,6 +41,7 @@
         @include font($color: map-get($colors, pink));
         text-decoration: none;
         text-transform: uppercase;
+        font-size: 14vw;
     }
 }
 
@@ -146,11 +148,12 @@
             display: flex;
             padding: 0;
             justify-content: space-evenly;
+            top: 0;
         }
     }
 
     &__list-item {
-        @include font($font-size: 2rem, $line-height: 1rem);
+        @include font($font-size: 2rem, $line-height: 1, $font-weight: bold);
 
         a {
             color: map-get($colors, green);
