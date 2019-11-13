@@ -15,7 +15,6 @@
 
         &:first-child {
             background-image: url(../images/dancing-girl.jpg);
-            background-position: right top;
         }
 
         &:nth-child(2) {
@@ -28,6 +27,19 @@
 
         &:last-child {
             padding-bottom: 0;
+        }
+
+        &:nth-child(odd) {
+            background-position: right top;
+        }
+
+        &:nth-child(even) {
+            background-position: left top;
+
+            h2,
+            h3 {
+                text-align: right;
+            }
         }
 
         &::before,
@@ -58,13 +70,6 @@
 
         & > * {
             z-index: 2;
-        }
-
-        &:nth-child(even) {
-            h2,
-            h3 {
-                text-align: right;
-            }
         }
 
         h2,
