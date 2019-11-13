@@ -38,7 +38,6 @@
     p {
         @include font($font-size: 10.45vw, $line-height: 1);
         margin: 0 1rem 0;
-        // display: inline-block;
         border: .5rem solid;
         padding: .25rem .5rem;
 
@@ -62,7 +61,6 @@
         width: 70vw;
         height: 70vw;
         background-color: map-get($colors, off-white);
-        // transform: rotate(45deg);
         top: calc(50% - 35vw);
         left: calc(50% - 35vw);
         z-index: 1
@@ -169,11 +167,6 @@
         span {
             display: block;
             line-height: 1;
-            // text-shadow:
-            //    -1px -1px 0 map-get($colors, off-white),
-            //     1px -1px 0 map-get($colors, off-white),
-            //     -1px 1px 0 map-get($colors, off-white),
-            //      1px 1px 0 map-get($colors, off-white);
 
             &:nth-child(1),
             &:nth-child(2) {

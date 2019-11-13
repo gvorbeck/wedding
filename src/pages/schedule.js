@@ -3,14 +3,14 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import storyStyles from "./our-story.module.scss"
+import scheduleStyles from "./schedule.module.scss"
 
 export default ({ data }) => (
-    <Layout pageName={storyStyles.ourStory}>
-        <SEO title="Our Story" />
+    <Layout pageName={scheduleStyles.schedule}>
+        <SEO title="Schedule" />
         {data.allMarkdownRemark.edges.map(({ node, i }) => (
-            <article key={node.id} className={storyStyles.story}>
-                <h1 className={storyStyles.title}>{node.frontmatter.title}</h1>
+            <article key={node.id} className={scheduleStyles.dates}>
+                <h1 className={scheduleStyles.title}>{node.frontmatter.title}</h1>
                 <section dangerouslySetInnerHTML={{ __html: node.html }} />
             </article>
         ))}
@@ -19,7 +19,7 @@ export default ({ data }) => (
 
 export const query = graphql`
     {
-      allMarkdownRemark(filter: {frontmatter: {title: {eq: "Our Story"}}}) {
+      allMarkdownRemark(filter: {frontmatter: {title: {eq: "Schedule"}}}) {
         edges {
           node {
             frontmatter {
@@ -27,6 +27,13 @@ export const query = graphql`
             }
             html
             id
+          }
+        }
+      },
+      imageOne: file(relativePath: { eq: "dancing-girl.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
           }
         }
       }

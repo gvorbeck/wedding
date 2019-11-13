@@ -3,53 +3,16 @@
 @import "../styles/functions.scss";
 
 .our-story section {
-    $dim: #{rem(75px)};
-    background-color: map-get($colors, pink);
-    padding: 1rem;
-    position: relative;
-
-    &::before,
-    &::after {
-        @include pseudo;
-        width: 0;
-        height: 0;
-        border-style: solid;
-    }
-
-    &::before {
-        border-width: 0 0 $dim 100vw;
-        border-color: transparent transparent map-get($colors, pink) transparent;
-        top: -$dim;
-        right: 0;
-    }
-
-    &::after {
-        border-width: $dim 0 0 100vw;
-        border-color: transparent transparent transparent map-get($colors, off-white);
-        bottom: 0;
-        left: 0;
-    }
+    @include content-container;
 }
 
 .title {
-    color: map-get($colors, green);
-    font-size: 3rem;
-    line-height: 1;
-    margin: 1rem 0 2rem 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    border: 5px solid;
-    padding: 0 .25rem;
+    @include page-title;
 }
 
-article {
+.story {
+    
     p {
-        z-index: 1;
-        position: relative;
-        font-size: 1.25rem;
 
         &:nth-child(odd) {
             margin-bottom: 12vw;

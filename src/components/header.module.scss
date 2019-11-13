@@ -7,9 +7,8 @@
     $header-height: #{rem(75px)};
     @include font($color: map-get($colors, off-white));
     background-color: map-get($colors, green);
-    padding: 1rem 0;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     width: 100%;
     height: 16vw;
     box-sizing: border-box;
@@ -32,12 +31,10 @@
         position: absolute;
         top: 0;
         width: 100%;
-        font-size: 6.25vw;
         text-align: center;
         line-height: 16vw;
 
         @include media(m) {
-            // margin: 0 1rem 1rem;
             line-height: 1;
             top: auto;
             bottom: 0;
@@ -47,8 +44,8 @@
     a {
         @include font($color: map-get($colors, pink));
         text-decoration: none;
-        text-transform: uppercase;
         font-size: 14vw;
+        text-transform: uppercase;
     }
 }
 
@@ -73,7 +70,7 @@
             }
 
             & ~ .navigation__list {
-                z-index: 2;
+                z-index: 10;
                 opacity: 1;
                 top: 0;
                 overflow: scroll;
@@ -99,8 +96,7 @@
         position: absolute;
         top: calc(16vw / 2 - (#{$dim} / 2));
         left: calc(16vw / 2 - (#{$dim} / 2));
-        // left: 1.25rem;
-        z-index: 3;
+        z-index: 11;
 
         @include media(m) {
             display: none;
