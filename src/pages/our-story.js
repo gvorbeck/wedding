@@ -3,14 +3,14 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import storyStyles from "./our-story.module.scss"
 
 export default ({ data }) => (
-    <Layout pageName="page--story">
+    <Layout pageName={storyStyles.ourStory}>
     <SEO title="Our Story" />
     {data.allMarkdownRemark.edges.map(({ node, i }) => (
         <article key={node.id} className="story">
-            <h1 className="page--title">{node.frontmatter.title}</h1>
+            <h1 className={storyStyles.title}>{node.frontmatter.title}</h1>
             <section dangerouslySetInnerHTML={{ __html: node.html }} />
         </article>
     ))}

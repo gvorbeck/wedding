@@ -1,3 +1,120 @@
 @import "../styles/variables.scss";
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
+
+.our-story section {
+    $dim: #{rem(75px)};
+    background-color: map-get($colors, pink);
+    padding: 1rem;
+    position: relative;
+
+    &::before,
+    &::after {
+        @include pseudo;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+    &::before {
+        border-width: 0 0 $dim 100vw;
+        border-color: transparent transparent map-get($colors, pink) transparent;
+        top: -$dim;
+        right: 0;
+    }
+
+    &::after {
+        border-width: $dim 0 0 100vw;
+        border-color: transparent transparent transparent map-get($colors, off-white);
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.title {
+    color: map-get($colors, green);
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1rem 0 2rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    border: 5px solid;
+    padding: 0 .25rem;
+}
+
+article {
+    p {
+        z-index: 1;
+        position: relative;
+        font-size: 1.25rem;
+
+        &:nth-child(odd) {
+            margin-bottom: 12vw;
+            font-size: 8vw;
+            color: map-get($colors, red);
+            font-style: italic;
+            font-weight: bold;
+            max-width: 75%;
+            transform: rotate(-5deg);
+
+            &::before,
+            &::after {
+                @include pseudo;
+            }
+
+            &::before {
+                background-color: map-get($colors, off-white);
+                width: 60%;
+                height: 120%;
+                z-index: -1;
+                border-radius: 2vw;
+            }
+
+            &::after {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                bottom: calc(-20% - 6vw);
+            }
+        }
+
+        &:nth-child(1) {
+            text-align: right;
+            float: right;
+            padding-right: 1rem;
+
+            &::before {
+                right: 0;
+            }
+
+            &::after {
+                border-width: 0 6vw 6vw 0;
+                border-color: transparent map-get($colors, off-white) transparent transparent;
+                right: 4vw;
+            }
+        }
+
+        &:nth-child(3) {
+            margin-top: 3rem;
+            float: left;
+            padding-left: 1rem;
+
+            &::before {
+                left: 0;
+            }
+
+            &::after {
+                border-width: 6vw 6vw 0 0;
+                border-color: map-get($colors, off-white) transparent transparent transparent;
+                left: 4vw;
+            }
+        }
+
+        &:nth-child(even) {
+            clear: both;
+        }
+    }
+}

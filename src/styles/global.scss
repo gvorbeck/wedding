@@ -14,6 +14,10 @@ body {
 main {
     margin-top: 16vw;
 
+    @include media(m) {
+        margin-top: 18vw;
+    }
+
     p {
         line-height: 1.5;
     }
@@ -22,14 +26,14 @@ main {
         margin-top: 1rem;
     }
 
-    .page--title {
-        font-size: 2rem;
-        margin: 2rem 1rem;
-        padding: 0 0 .5rem;
-        border-bottom: rem(2px) solid map-get($colors, pink);
-        color: map-get($colors, green);
-        position: relative;
-    }
+    // .page--title {
+    //     font-size: 2rem;
+    //     margin: 2rem 1rem;
+    //     padding: 0 0 .5rem;
+    //     border-bottom: rem(2px) solid map-get($colors, pink);
+    //     color: map-get($colors, green);
+    //     position: relative;
+    // }
 }
 
 footer {
@@ -38,80 +42,80 @@ footer {
 }
 
 // Story styles in global because some classnames are in markdown and cannot generate module classnames.
-.story {
-
-    &--section {
-        padding: 0 1rem 1rem;
-
-        @include media(m) {
-            overflow: hidden;
-        }
-
-        & + .story--section {
-            padding: 2rem 1rem 1rem;
-        }
-
-        &:nth-child(even) {
-            background-color: map-get($colors, gray);
-            color: map-get($colors, off-white);
-        }
-    }
-}
-
-.bubble {
-    color: map-get($colors, green);
-    font-size: 2rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    background-color: map-get($colors, pink);
-    padding: 1rem;
-    border-radius: .5rem;
-    position: relative;
-    margin: 0 0 3rem;
-
-    @include media(m) {
-        max-width: 20rem;
-    }
-
-    &::after {
-        @include pseudo;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border: 2rem solid transparent;
-        border-top-color: map-get($colors, pink);
-        border-bottom: 0;
-        margin-bottom: -2rem;
-    }
-
-    &.right {
-        margin-left: 4rem;
-
-        @include media(m) {
-            float: right;
-        }
-
-        &::after {
-            right: 4rem;
-            border-right: 0;
-            margin-right: -2rem;
-        }
-    }
-
-    &.left {
-        margin-right: 4rem;
-
-        @include media(m) {
-            float: left;
-        }
-
-        &::after {
-            left: 4rem;
-            border-left: 0;
-            margin-left: -2rem;
-        }
-    }
-}
-
-p + .bubble {
-    margin-top: 2rem;
-}
+// .story {
+//
+//     &--section {
+//         padding: 0 1rem 1rem;
+//
+//         @include media(m) {
+//             overflow: hidden;
+//         }
+//
+//         & + .story--section {
+//             padding: 2rem 1rem 1rem;
+//         }
+//
+//         &:nth-child(even) {
+//             background-color: map-get($colors, gray);
+//             color: map-get($colors, off-white);
+//         }
+//     }
+// }
+//
+// .bubble {
+//     color: map-get($colors, green);
+//     font-size: 2rem;
+//     font-family: 'IBM Plex Sans', sans-serif;
+//     background-color: map-get($colors, pink);
+//     padding: 1rem;
+//     border-radius: .5rem;
+//     position: relative;
+//     margin: 0 0 3rem;
+//
+//     @include media(m) {
+//         max-width: 20rem;
+//     }
+//
+//     &::after {
+//         @include pseudo;
+//         bottom: 0;
+//         width: 0;
+//         height: 0;
+//         border: 2rem solid transparent;
+//         border-top-color: map-get($colors, pink);
+//         border-bottom: 0;
+//         margin-bottom: -2rem;
+//     }
+//
+//     &.right {
+//         margin-left: 4rem;
+//
+//         @include media(m) {
+//             float: right;
+//         }
+//
+//         &::after {
+//             right: 4rem;
+//             border-right: 0;
+//             margin-right: -2rem;
+//         }
+//     }
+//
+//     &.left {
+//         margin-right: 4rem;
+//
+//         @include media(m) {
+//             float: left;
+//         }
+//
+//         &::after {
+//             left: 4rem;
+//             border-left: 0;
+//             margin-left: -2rem;
+//         }
+//     }
+// }
+//
+// p + .bubble {
+//     margin-top: 2rem;
+// }

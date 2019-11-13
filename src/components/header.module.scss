@@ -76,6 +76,7 @@
                 z-index: 2;
                 opacity: 1;
                 top: 0;
+                overflow: scroll;
             }
 
             & ~ .navigation__label .navigation__icon {
