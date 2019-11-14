@@ -2,16 +2,8 @@
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
 
-.our-story section {
-    @include content-container;
-}
-
-.title {
-    @include page-title;
-}
-
 .story {
-    
+
     p {
 
         &:nth-child(odd) {

@@ -1,0 +1,16 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+@import "../styles/functions.scss";
+
+.title {
+    @include page-title;
+}
+
+.page-content {
+    @include content-container;
+
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+}

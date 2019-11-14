@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import globalStyles from "../styles/global.module.scss"
 import storyStyles from "./our-story.module.scss"
 
 export default ({ data }) => (
@@ -10,8 +11,8 @@ export default ({ data }) => (
         <SEO title="Our Story" />
         {data.allMarkdownRemark.edges.map(({ node, i }) => (
             <article key={node.id} className={storyStyles.story}>
-                <h1 className={storyStyles.title}>{node.frontmatter.title}</h1>
-                <section dangerouslySetInnerHTML={{ __html: node.html }} />
+                <h1 className={[globalStyles.title, storyStyles.title].join(' ')}>{node.frontmatter.title}</h1>
+                <section className={globalStyles.pageContent} dangerouslySetInnerHTML={{ __html: node.html }} />
             </article>
         ))}
     </Layout>
