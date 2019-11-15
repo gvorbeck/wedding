@@ -7,7 +7,7 @@ import globalStyles from "../styles/global.module.scss"
 import travelStyles from "./travel.module.scss"
 
 export default ({ data }) => (
-    <Layout pageName={travelStyles.schedule}>
+    <Layout pageName={travelStyles.travel}>
         <SEO title="Travel" />
         {data.allMarkdownRemark.edges.map(({ node, i }) => (
             <article key={node.id} className={travelStyles.directions}>
