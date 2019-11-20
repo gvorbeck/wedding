@@ -1,5 +1,71 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+@import "../styles/functions.scss";
+
 .travel {
     iframe {
-        margin: 2rem 0
+        margin: 0;
+    }
+
+    li {
+        $angle: .75deg;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        background-color: map-get($colors, off-white);
+        background-repeat: no-repeat;
+        background-position: center 1rem;
+        background-size: 5rem;
+
+        &:nth-child(odd) {
+            transform: rotate($angle);
+
+            & > * {
+                transform: rotate(-$angle);
+            }
+        }
+
+        &:nth-child(even) {
+            transform: rotate(-$angle);
+
+            & > * {
+                transform: rotate($angle);
+            }
+        }
+
+        &:nth-child(1) {
+            background-image: url(../images/wine.svg);
+        }
+
+        &:nth-child(2) {
+            background-image: url(../images/hotel.svg);
+        }
+
+        &:nth-child(3) {
+            background-image: url(../images/plane.svg);
+        }
+
+        &:nth-child(4) {
+            background-image: url(../images/train.svg);
+        }
+    }
+
+    h2 {
+        color: map-get($colors, green);
+        font-size: 2rem;
+        @include font($sans: false);
+        font-style: italic;
+        z-index: 1;
+        position: relative;
+        text-indent: -1vw;
+        line-height: 7rem;
+        // margin: 1rem 0 0;
+        // padding-bottom: 1rem;
+    }
+
+    p {
+        // background-color: map-get($colors, off-white);
+        // background-color: rgba(map-get($colors, off-white), .75);
+        padding: .5rem;
     }
 }

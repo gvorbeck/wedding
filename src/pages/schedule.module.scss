@@ -8,11 +8,11 @@
         $dim: 2rem;
         position: relative;
         padding-bottom: 4rem;
-        background-color: map-get($colors, pink);
-        background-size: contain;
-        background-blend-mode: multiply;
-        background-repeat: no-repeat;
-        background-position: top right;
+        // background-color: map-get($colors, pink);
+        // background-size: contain;
+        // background-blend-mode: multiply;
+        // background-repeat: no-repeat;
+        // background-position: top right;
 
         &::before,
         &::after {
@@ -37,7 +37,8 @@
         }
 
         &:first-child {
-            background-image: url(../images/dancing-girl.jpg);
+            // background-image: url(../images/dancing-girl.jpg);
+            // background-size: 28vw;
         }
 
         &:last-child {
@@ -60,9 +61,10 @@
         }
 
         h2 {
-            transform: rotate(-.5deg);
+            // transform: rotate(-.5deg);
             text-indent: -1vw;
-            margin: 1rem 0;
+            margin: 1rem 0 0;
+            padding-bottom: 1rem;
         }
 
         h3 {
@@ -74,6 +76,10 @@
         p {
             background-color: map-get($colors, off-white);
             padding: .5rem;
+
+            & + p {
+                margin-top: 0;
+            }
         }
     }
 }

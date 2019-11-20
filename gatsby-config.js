@@ -22,10 +22,10 @@ module.exports = {
                 name: 'Things to Do',
                 link: '/things-to-do'
             },
-            {
-                name: 'FAQs',
-                link: '/faq'
-            }
+            // {
+            //     name: 'FAQs',
+            //     link: '/faq'
+            // }
         ],
         description: `We're getting married`,
         author: `@jgvorbeck`,
