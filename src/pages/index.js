@@ -8,28 +8,22 @@ import indexStyles from "./index.module.scss"
 
 
 export default ({ data }) => (
-  <Layout pageName="page--home">
+  <Layout pageName={indexStyles.home}>
     <SEO title="Home" />
-    {/*<div className={indexStyles.advert}>
-        <div>
-            <h2>September 5th, 2020</h2>
-            <h2>9/5/20</h2>
-            <h3>Unionville Vineyards</h3>
-        </div>
-        <p>We're getting <span>married!</span></p>
-    </div>*/}
-    {/*<Img fluid={data.imageOne.childImageSharp.fluid} />*/}
     <section className={indexStyles.intro}>
-        {/*<HandSVG />*/}
-        <Img fluid={data.imageTwo.childImageSharp.fluid} />
-        <p><span className={indexStyles.name}>Krishanti Daryanani</span> and <span className={indexStyles.name}>Garrett Vorbeck</span></p>
+        <div className={indexStyles.img}>
+            <Img fluid={data.imgHeads.childImageSharp.fluid} />
+        </div>
     </section>
     <section className={indexStyles.info}>
-        <p className={indexStyles.date}><span>09/05</span><span>2020</span></p>
-        <Img className={indexStyles.imgCouple} fluid={data.imageThree.childImageSharp.fluid} />
+        <p className={indexStyles.title}><span className={indexStyles.name}>Krishanti Daryanani</span><span>&</span><span className={indexStyles.name}>Garrett Vorbeck</span></p>
+        <p className={indexStyles.date}>
+            <span>09/05</span><span className={indexStyles.year}>2020</span>
+        </p>
+        <Img className={indexStyles.img} fluid={data.imgFire.childImageSharp.fluid} />
         <p className={indexStyles.location}>
-            <span>Unionville</span><span>Vineyards</span>
-            <span>Ringoes, NJ</span>
+            <span>Unionville Vineyards</span>
+            <span>New Jersey</span>
         </p>
     </section>
   </Layout>
@@ -37,21 +31,14 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    imageOne: file(relativePath: { eq: "faces.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    imageTwo: file(relativePath: { eq: "wedding-couple.png" }) {
+    imgHeads: file(relativePath: { eq: "wedding-couple.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     },
-    imageThree: file(relativePath: { eq: "wedding-dress.jpg" }) {
+    imgFire: file(relativePath: { eq: "wedding-dress.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid

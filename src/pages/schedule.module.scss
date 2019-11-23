@@ -68,9 +68,8 @@
         }
 
         h3 {
+            @include tilted-title;
             max-width: calc(50vw - #{$dim} * 1.5);
-            transform: rotate(.75deg);
-            text-indent: -1vw;
         }
 
         p {

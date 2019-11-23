@@ -1,5 +1,5 @@
 @import "../styles/reset.scss";
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,400i,700|IBM+Plex+Serif:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,400i,700|Courgette|IBM+Plex+Serif:400,400i&display=swap');
 @import "../styles/variables.scss";
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
@@ -14,10 +14,10 @@ body {
 }
 
 main {
-    margin-top: 16vw;
+    margin-top: 5rem;
 
     @include media(m) {
-        margin-top: 18vw;
+        margin-top: 7.5rem;
     }
 
     p {
