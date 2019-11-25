@@ -18,6 +18,11 @@
     padding: 0 .25rem;
 }
 
+@mixin tilted-title {
+    transform: rotate(.75deg);
+    text-indent: -.5rem;
+}
+
 @mixin content-container {
     $dim: #{rem(75px)};
     background-color: map-get($colors, pink);
