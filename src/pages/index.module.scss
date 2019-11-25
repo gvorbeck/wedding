@@ -37,8 +37,12 @@ $faces: 75vw;
     padding: calc((#{$faces} + 10vw) / 2) 0 0;
     position: relative;
 
-    &::before {
+    &::before,
+    &::after {
         @include pseudo;
+    }
+
+    &::before {
         width: 0;
         height: 0;
         border-style: solid;
@@ -50,7 +54,6 @@ $faces: 75vw;
 
     &::after {
         $dim: #{rem(75px)};
-        @include pseudo;
         width: 0;
         height: 0;
         border-style: solid;
@@ -114,16 +117,8 @@ $faces: 75vw;
     }
 
     .name {
-        // transform: rotate(5deg);
-        // z-index: 1;
-        // position: relative;
-        // font-style: normal;
         display: inline-block;
-        // background-color: map-get($colors, off-white);
-        // line-height: 1.25;
-        // @include tilted-title;
         border-top: .25rem solid;
-        // margin: 1rem 0;
         margin: 0;
     }
 }
@@ -131,22 +126,26 @@ $faces: 75vw;
 .date {
     color: map-get($colors, red);
     border: .5rem solid;
-    display: inline-block;
-    font-size: 3.5rem;
-    font-weight: bold;
     width: 50vw;
+    max-width: rem(160px);
     height: 50vw;
-    text-align: center;
-    line-height: 1;
-    padding: .75rem 1rem 0;
-    box-sizing: border-box;
+    max-height: rem(160px);
+    padding: .75rem 1rem;
     position: relative;
     z-index: 1;
     margin: 0 0 0 1rem;
-    // background-color: rgba(map-get($colors, off-white), .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+
+    &::before,
+    &::after {
+        @include pseudo;
+    }
 
     &::before {
-        @include pseudo;
         width: 10rem;
         height: 10rem;
         background-color: map-get($colors, off-white);
@@ -156,14 +155,21 @@ $faces: 75vw;
         top: 5rem;
         z-index: -1;
     }
-}
 
-.year {
-    display: block;
-    font-size: 4rem;
-    margin: 1.25rem 0 0;
-    border-top: .5rem solid;
-    padding-top: 1rem;
+    &::after {
+        $height: .5rem;
+        $left: 1rem;
+        width: calc(100% - #{$left} * 2);
+        height: $height;
+        left: $left;
+        top: calc(50% - #{$height} / 2);
+        background-color: map-get($colors, red);
+    }
+
+    span {
+        font-size: 3.5rem;
+        flex: 1;
+    }
 }
 
 .location {
@@ -176,14 +182,10 @@ $faces: 75vw;
     text-align: right;
 
     span {
-        // @include tilted-title;
-        // display: block;
         line-height: 1;
         font-weight: bold;
-        // background-color: map-get($colors, off-white);
         z-index: 1;
         position: relative;
-        // text-align: left;
 
         &:nth-child(1) {
             font-size: 2rem;

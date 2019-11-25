@@ -14,3 +14,7 @@
         z-index: 1;
     }
 }
+
+a {
+    color: map-get($colors, red);
+}
