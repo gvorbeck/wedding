@@ -17,7 +17,7 @@ main {
     margin-top: 5rem;
 
     @include media(m) {
-        margin-top: 7.5rem;
+        margin-top: rem(132px);
     }
 
     p {

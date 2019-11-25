@@ -71,32 +71,10 @@
 }
 
 @mixin content-container {
-    $dim: #{rem(75px)};
+    @include tilted-top($color: map-get($colors, pink), $tilt: right);
+    @include tilted-bottom($color: map-get($colors, pink), $tilt: right);
     background-color: map-get($colors, pink);
     padding: 1rem;
-    position: relative;
-
-    &::before,
-    &::after {
-        @include pseudo;
-        width: 0;
-        height: 0;
-        border-style: solid;
-    }
-
-    &::before {
-        border-width: 0 0 $dim 100vw;
-        border-color: transparent transparent map-get($colors, pink) transparent;
-        top: -$dim;
-        right: 0;
-    }
-
-    &::after {
-        border-width: $dim 0 0 100vw;
-        border-color: transparent transparent transparent map-get($colors, off-white);
-        bottom: 0;
-        left: 0;
-    }
 
     p {
         z-index: 1;

@@ -7,13 +7,20 @@
     padding: 2rem 0 0;
 
     .img {
+        $dimension: 80vw;
         background-color: map-get($colors, off-white);
         margin: 0 auto;
         border-radius: 50%;
-        width: 80vw;
-        height: 80vw;
+        width: $dimension;
+        height: $dimension;
         z-index: 1;
         position: relative;
+
+        @include media(m) {
+            $dimension: 50vw;
+            width: $dimension;
+            height: $dimension;
+        }
 
         & > div {
             overflow: visible !important;
@@ -35,13 +42,24 @@
     padding: 40vw 0 0;
     position: relative;
 
+    @include media(m) {
+        margin-top: -16vw;
+        padding-top: 28vw;
+    }
+
     .img {
         mix-blend-mode: multiply;
         position: absolute;
-        bottom: 10rem;
+        bottom: 5rem;
         right: 0;
         z-index: 1;
         width: 60%;
+
+        @include media(m) {
+            opacity: .6;
+            width: 44%;
+            bottom: 4rem;
+        }
     }
 }
 
@@ -113,7 +131,7 @@
         background-color: map-get($colors, off-white);
         border-radius: 50%;
         z-index: -1;
-        left: 60%;
+        right: -14rem;
         bottom: -20%;
     }
 
@@ -139,8 +157,12 @@
     margin-top: 1rem;
     position: relative;
     font-size: 2rem;
-    padding: 0 1rem 5rem;
+    padding: 0 1rem;
     text-align: right;
+
+    @include media(m) {
+        font-size: 3.5rem;
+    }
 
     span {
         line-height: 1;
@@ -150,206 +172,3 @@
         display: block;
     }
 }
-
-.location {
-
-}
-
-//
-// $faces: 75vw;
-//
-// .intro {
-//     background-color: map-get($colors, green);
-//     padding: 2rem 1rem 50vw;
-//     position: relative;
-//
-//     .img {
-//         position: absolute;
-//         width: $faces;
-//         height: $faces;
-//         background-color: map-get($colors, off-white);
-//         border-radius: 50%;
-//         left: calc(50vw - #{$faces} / 2);
-//         z-index: 1;
-//
-//         & > div {
-//             overflow: visible !important;
-//         }
-//
-//         img {
-//             margin-top: 1rem;
-//             margin-left: -10%;
-//             width: 120% !important;
-//             height: 120% !important;
-//             overflow: visible;
-//         }
-//     }
-// }
-//
-// .info {
-//     background-color: map-get($colors, pink);
-//     padding: calc((#{$faces} - 2vw) / 2) 0 0;
-//     position: relative;
-//
-//     &::before {
-//         @include pseudo;
-//         width: 0;
-//         height: 0;
-//         border-style: solid;
-//         border-width: rem(75px) 0 0 100vw;
-//         border-color: transparent transparent transparent map-get($colors, off-white);
-//         bottom: 0;
-//         left: 0;
-//     }
-//
-//     &::after {
-//         $dim: #{rem(75px)};
-//         @include pseudo;
-//         width: 0;
-//         height: 0;
-//         border-style: solid;
-//         border-width: $dim 0 0 100vw;
-//         border-color: transparent transparent transparent map-get($colors, pink);
-//         top: -$dim;
-//         left: 0;
-//     }
-//
-//     .img {
-//         background-color: map-get($colors, pink);
-//         mix-blend-mode: multiply;
-//         position: absolute !important;
-//         // top: 10rem;
-//         bottom: 10rem;
-//         right: 0;
-//         width: 70vw;
-//         opacity: .5;
-//         z-index: 1;
-//     }
-// }
-//
-// .title {
-//     color: map-get($colors, green);
-//         // @include font($sans: false);
-//     font-family: 'Courgette', cursive;
-//     text-align: center;
-//     font-weight: bold;
-//     font-size: 2.25rem;
-//     line-height: 1;
-//     margin: 0 0 7rem;
-//     position: relative;
-//     background-color: map-get($colors, off-white);
-//     padding: 1rem 0 .5rem;
-//     font-style: italic;
-//     transform: rotate(-2deg);
-//
-//     // &::before {
-//     //     @include pseudo;
-//     //         $dim: #{rem(75px)};
-//     //     border-style: solid;
-//     //     border-width: 0 0 $dim 100vw;
-//     //     border-color: transparent transparent map-get($colors, off-white) transparent;
-//     //     top: -$dim;
-//     //     left: 0;
-//     // }
-//
-//     // &::after {
-//     //     @include pseudo;
-//     //         $dim: #{rem(75px)};
-//     //     border-style: solid;
-//     //     border-width: 0 100vw $dim 0;
-//     //     border-color: transparent map-get($colors, off-white) transparent transparent;
-//     //     bottom: -$dim;
-//     //     left: 0;
-//     // }
-//
-//     span {
-//         display: block;
-//         margin: 1rem 0;
-//     }
-//
-//     .name {
-//         // transform: rotate(5deg);
-//         // z-index: 1;
-//         // position: relative;
-//         // font-style: normal;
-//         display: inline-block;
-//         // background-color: map-get($colors, off-white);
-//         // line-height: 1.25;
-//         // @include tilted-title;
-//         border-top: .25rem solid;
-//         // margin: 1rem 0;
-//         margin: 0;
-//     }
-// }
-//
-// .date {
-//     color: map-get($colors, red);
-//     border: .5rem solid;
-//     display: inline-block;
-//     font-size: 3.5rem;
-//     font-weight: bold;
-//     width: 50vw;
-//     height: 50vw;
-//     text-align: center;
-//     line-height: 1;
-//     padding: .75rem 1rem 0;
-//     box-sizing: border-box;
-//     position: relative;
-//     z-index: 1;
-//     margin: 0 0 0 1rem;
-//     // background-color: rgba(map-get($colors, off-white), .4);
-//
-//     &::before {
-//         @include pseudo;
-//         width: 10rem;
-//         height: 10rem;
-//         background-color: map-get($colors, off-white);
-//         display: block;
-//         border-radius: 50%;
-//         left: 5rem;
-//         top: 5rem;
-//         z-index: -1;
-//     }
-// }
-//
-// .year {
-//     display: block;
-//     font-size: 4rem;
-//     margin: 1.25rem 0 0;
-//     border-top: .5rem solid;
-//     padding-top: 1rem;
-// }
-//
-// .location {
-//     @include font($sans: false);
-//     color: map-get($colors, green);
-//     margin-top: 1rem;
-//     position: relative;
-//     font-size: 2rem;
-//     padding: 0 1rem 5rem;
-//     text-align: right;
-//
-//     span {
-//         // @include tilted-title;
-//         // display: block;
-//         line-height: 1;
-//         font-weight: bold;
-//         // background-color: map-get($colors, off-white);
-//         z-index: 1;
-//         position: relative;
-//         // text-align: left;
-//
-//         &:nth-child(1) {
-//             font-size: 2rem;
-//         }
-//
-//         &:nth-child(2) {
-//             display: block;
-//             font-size: 2rem;
-//         }
-//
-//         & + span {
-//             margin-top: .5rem;
-//         }
-//     }
-// }
