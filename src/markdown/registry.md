@@ -1,0 +1,4 @@
+---
+title: Registry
+---
+Foo
