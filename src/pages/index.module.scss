@@ -35,36 +35,10 @@
     padding: 40vw 0 0;
     position: relative;
 
-    &::before,
-    &::after {
-        @include pseudo;
-    }
-
-    &::before {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: rem(75px) 0 0 100vw;
-        border-color: transparent transparent transparent map-get($colors, off-white);
-        bottom: 0;
-        left: 0;
-    }
-
-    &::after {
-        $dim: #{rem(75px)};
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: $dim 0 0 100vw;
-        border-color: transparent transparent transparent map-get($colors, pink);
-        top: -$dim;
-        left: 0;
-    }
-
     .img {
         mix-blend-mode: multiply;
         position: absolute;
-        bottom: 0;
+        bottom: 10rem;
         right: 0;
         z-index: 1;
         width: 60%;
@@ -72,18 +46,21 @@
 }
 
 .title {
+    $width: 95vw;
     background-color: map-get($colors, off-white);
     color: map-get($colors, green);
     text-align: center;
     font-family: 'Courgette', cursive;
     font-weight: bold;
-    font-size: 2.25rem;
+    font-size: 2rem;
     transform: rotate(-2deg);
-    padding: .5rem 0 0;
+    padding: .5rem 0 .25rem;
     margin: 0 0 3rem;
-    width: 110%;
+    width: $width;
     position: relative;
-    right: 5%;
+    left: calc((100vw - #{$width}) / 2);
+    line-height: 1;
+    z-index: 2;
 
     strong {
         border-top: .25rem solid;
@@ -170,21 +147,7 @@
         font-weight: bold;
         z-index: 1;
         position: relative;
-
-        &:nth-child(1) {
-            font-size: 2rem;
-        }
-
-        &:first-child {
-            font-size: 3.5rem;
-            padding: 0 0 1rem;
-        }
-
-        &:last-child {
-            font-size: 4rem;
-            border-top: .5rem solid;
-            padding: 1rem 0 0;
-        }
+        display: block;
     }
 }
 
