@@ -1,3 +1,6 @@
+@import "../styles/variables.scss";
+@import "../styles/functions.scss";
+
 @mixin pseudo($display: block, $pos: absolute, $content: '') {
   content: $content;
   display: $display;
@@ -16,6 +19,50 @@
     display: inline-block;
     border: rem(5px) solid;
     padding: 0 .25rem;
+}
+
+@mixin tilted-top($color: map-get($colors, off-white), $tilt: left) {
+    $dimension: #{rem(75px)};
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        top: -$dimension;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        @if ($tilt == left) {
+            border-width: $dimension 0 0 100vw;
+            border-color: transparent transparent transparent $color;
+        }
+        @else if ($tilt == right) {
+            border-width: 0 0 $dimension 100vw;
+            border-color: transparent transparent $color transparent;
+        }
+    }
+}
+
+@mixin tilted-bottom($color: map-get($colors, off-white), $tilt: left) {
+    $dimension: #{rem(75px)};
+    position: relative;
+
+    &::after {
+        @include pseudo;
+        bottom: -$dimension;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        @if ($tilt == left) {
+            border-width: $dimension 100vw 0 0;
+            border-color: $color transparent transparent transparent;
+        }
+        @else if ($tilt == right) {
+            border-width: 0 100vw $dimension 0;
+            border-color: transparent $color transparent transparent;
+        }
+    }
 }
 
 @mixin tilted-title {
