@@ -20,6 +20,10 @@ main {
         margin-top: rem(132px);
     }
 
+    @include media(l) {
+        margin-top: rem(100px);
+    }
+
     p {
         line-height: 1.5;
     }
@@ -32,4 +36,5 @@ main {
 footer {
     text-align: center;
     margin: 1rem 0 0;
+    position: relative;
 }

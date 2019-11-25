@@ -30,6 +30,20 @@
         color: map-get($colors, pink);
         text-decoration: none;
     }
+
+    @include media(l) {
+        $dimension: 4rem;
+
+        &__logo {
+            height: $dimension;
+            left: calc(50% - #{$dimension} / 2);
+        }
+
+        &__title {
+            line-height: $dimension;
+            font-size: $dimension;
+        }
+    }
 }
 
 .navigation {
@@ -126,6 +140,10 @@
             justify-content: space-around;
             height: auto;
             padding: 1rem;
+        }
+
+        @include media(l) {
+            padding: .5rem 1rem;
         }
     }
 

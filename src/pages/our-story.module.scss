@@ -5,8 +5,11 @@
 .story {
 
     p {
+        background-color: map-get($colors, off-white);
+        padding: .5rem;
 
         &:nth-child(odd) {
+            background-color: transparent;
             margin-bottom: 12vw;
             font-size: 8vw;
             color: map-get($colors, red);
@@ -38,8 +41,7 @@
 
         &:nth-child(1) {
             text-align: right;
-            float: right;
-            padding-right: 1rem;
+            padding: 0 1rem 0 0;
 
             &::before {
                 right: 0;
@@ -55,7 +57,7 @@
         &:nth-child(3) {
             margin-top: 3rem;
             float: left;
-            padding-left: 1rem;
+            padding: 0 0 0 1rem;
 
             &::before {
                 left: 0;

@@ -2,9 +2,23 @@
 @import "../styles/functions.scss";
 @import "../styles/mixins.scss";
 
+@include media(l) {
+    .home main {
+        display: flex;
+
+        & > section {
+            flex: 1;
+        }
+    }
+}
+
 .splash {
     background-color: map-get($colors, green);
     padding: 2rem 0 0;
+
+    @include media(l) {
+        @include tilted-bottom($color: map-get($colors, green), $tilt: right, $width: 50vw);
+    }
 
     .img {
         $dimension: 80vw;
@@ -35,16 +49,25 @@
 }
 
 .info {
-    @include tilted-top($color: map-get($colors, pink), $tilt: left);
     @include tilted-bottom($color: map-get($colors, pink), $tilt: right);
     background-color: map-get($colors, pink);
     margin: -30vw 0 0;
     padding: 40vw 0 0;
     position: relative;
 
+    @include media(sm) {
+        @include tilted-top($color: map-get($colors, pink), $tilt: left);
+    }
+
     @include media(m) {
         margin-top: -16vw;
-        padding-top: 28vw;
+        padding-top: 24vw;
+    }
+
+    @include media(l) {
+        @include tilted-bottom($color: map-get($colors, pink), $tilt: left, $width: 50vw);
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .img {
@@ -59,6 +82,14 @@
             opacity: .6;
             width: 44%;
             bottom: 4rem;
+        }
+
+        @include media(l) {
+            $width: 80%;
+            bottom: 0;
+            width: $width;
+            right: calc(50% - #{$width} / 2);
+            opacity: .4;
         }
     }
 }
@@ -79,6 +110,17 @@
     left: calc((100vw - #{$width}) / 2);
     line-height: 1;
     z-index: 2;
+
+    @include media(m) {
+        font-size: 3rem;
+    }
+
+    @include media(l) {
+        width: 50vw;
+        transform: rotate(0deg);
+        left: 0;
+        margin-bottom: 2rem;
+    }
 
     strong {
         border-top: .25rem solid;
@@ -120,6 +162,23 @@
     text-align: center;
     font-weight: bold;
 
+    @include media(l) {
+        $margin: 2rem;
+        width: auto;
+        max-width: none;
+        margin: 0 $margin;
+        border-bottom-width: 0;
+        z-index: 2;
+
+        .month-day {
+            display: none;
+        }
+
+        .alt-month-day {
+            display: block;
+        }
+    }
+
     &::before,
     &::after {
         @include pseudo;
@@ -133,6 +192,14 @@
         z-index: -1;
         right: -14rem;
         bottom: -20%;
+
+        @include media(m) {
+            right: -22rem;
+        }
+
+        @include media(l) {
+            display: none;
+        }
     }
 
     &::after {
@@ -151,6 +218,10 @@
     }
 }
 
+.alt-month-day {
+    display: none;
+}
+
 .location {
     @include font($sans: false);
     color: map-get($colors, green);
@@ -162,6 +233,17 @@
 
     @include media(m) {
         font-size: 3.5rem;
+    }
+
+    @include media(l) {
+        color: map-get($colors, red);
+        padding: 0 1rem 1rem;
+        margin: 0 2rem;
+        font-size: 2.5rem;
+        @include font($sans: true);
+        border: .5rem solid map-get($colors, red);
+        border-top-width: 0;
+        text-align: center;
     }
 
     span {

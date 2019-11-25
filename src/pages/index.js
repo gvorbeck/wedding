@@ -19,6 +19,7 @@ export default ({ data }) => (
             <p className={indexStyles.title}><strong>Krishanti Daryanani</strong><span> & </span><strong>Garrett Vorbeck</strong></p>
             <p className={indexStyles.date}>
                 <span className={indexStyles.monthDay}>09/05</span>
+                <span className={indexStyles.altMonthDay}>September 5th</span>
                 <span className={indexStyles.year}>2020</span>
             </p>
             <div className={indexStyles.img}>

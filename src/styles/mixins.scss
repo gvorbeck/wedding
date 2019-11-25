@@ -21,45 +21,43 @@
     padding: 0 .25rem;
 }
 
-@mixin tilted-top($color: map-get($colors, off-white), $tilt: left) {
-    $dimension: #{rem(75px)};
+@mixin tilted-top($color: map-get($colors, off-white), $tilt: left, $height: #{rem(75px)}, $width: 100vw) {
     position: relative;
 
     &::before {
         @include pseudo;
-        top: -$dimension;
+        top: -$height;
         left: 0;
         width: 0;
         height: 0;
         border-style: solid;
         @if ($tilt == left) {
-            border-width: $dimension 0 0 100vw;
+            border-width: $height 0 0 $width;
             border-color: transparent transparent transparent $color;
         }
         @else if ($tilt == right) {
-            border-width: 0 0 $dimension 100vw;
+            border-width: 0 0 $height $width;
             border-color: transparent transparent $color transparent;
         }
     }
 }
 
-@mixin tilted-bottom($color: map-get($colors, off-white), $tilt: left) {
-    $dimension: #{rem(75px)};
+@mixin tilted-bottom($color: map-get($colors, off-white), $tilt: left, $height: #{rem(75px)}, $width: 100vw) {
     position: relative;
 
     &::after {
         @include pseudo;
-        bottom: -$dimension;
+        bottom: -$height;
         left: 0;
         width: 0;
         height: 0;
         border-style: solid;
         @if ($tilt == left) {
-            border-width: $dimension 100vw 0 0;
+            border-width: $height $width 0 0;
             border-color: $color transparent transparent transparent;
         }
         @else if ($tilt == right) {
-            border-width: 0 100vw $dimension 0;
+            border-width: 0 $width $height 0;
             border-color: transparent $color transparent transparent;
         }
     }
@@ -95,19 +93,24 @@
 
 // BREAKPOINTS
 $breakpoints: (
-    1: 480px,
+    1: 320px,
     2: 768px,
     3: 1024px
 );
 
 @mixin media($size) {
-    @if $size == a {
+    @if $size == s {
         @media only screen and (min-width: map-get($breakpoints, 1)) {
             @content;
         }
     }
     @if $size == m {
         @media only screen and (min-width: map-get($breakpoints, 2)) {
+            @content;
+        }
+    }
+    @if $size == sm {
+        @media only screen and (max-width: map-get($breakpoints, 3)) {
             @content;
         }
     }
