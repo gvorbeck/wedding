@@ -8,42 +8,45 @@ import indexStyles from "./index.module.scss"
 
 
 export default ({ data }) => (
-  <Layout pageName={indexStyles.home}>
-    <SEO title="Home" />
-    <section className={indexStyles.intro}>
-        <div className={indexStyles.img}>
-            <Img fluid={data.imgHeads.childImageSharp.fluid} />
-        </div>
-    </section>
-    <section className={indexStyles.info}>
-        <p className={indexStyles.title}><span className={indexStyles.name}>Krishanti Daryanani</span><span>&</span><span className={indexStyles.name}>Garrett Vorbeck</span></p>
-        <p className={indexStyles.date}>
-            <span>09/05</span><span className={indexStyles.year}>2020</span>
-        </p>
-        <Img className={indexStyles.img} fluid={data.imgFire.childImageSharp.fluid} />
-        <p className={indexStyles.location}>
-            <span>Unionville Vineyards</span>
-            <span>New Jersey</span>
-        </p>
-    </section>
-  </Layout>
+    <Layout pageName={indexStyles.home}>
+        <SEO title="Home" />
+        <section className={indexStyles.splash}>
+            <div className={indexStyles.img}>
+                <Img fluid={data.imgHeads.childImageSharp.fluid} />
+            </div>
+        </section>
+        <section className={indexStyles.info}>
+            <p className={indexStyles.title}><strong>Krishanti Daryanani</strong><span> & </span><strong>Garrett Vorbeck</strong></p>
+            <p className={indexStyles.date}>
+                <span className={indexStyles.monthDay}>09/05</span>
+                <span className={indexStyles.year}>2020</span>
+            </p>
+            <div className={indexStyles.img}>
+                <Img fluid={data.imgFire.childImageSharp.fluid} />
+            </div>
+            <p className={indexStyles.location}>
+                <span className={indexStyles.venue}>Unionville Vineyards</span>
+                <span className={indexStyles.state}>New Jersey</span>
+            </p>
+        </section>
+    </Layout>
 )
 
 export const query = graphql`
-  query {
+query {
     imgHeads: file(relativePath: { eq: "wedding-couple.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+        childImageSharp {
+            fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+            }
         }
-      }
     },
     imgFire: file(relativePath: { eq: "wedding-dress.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid
+        childImageSharp {
+            fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+            }
         }
-      }
     },
-  }
+}
 `
