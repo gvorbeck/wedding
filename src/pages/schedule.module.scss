@@ -21,6 +21,10 @@
             border-radius: 50%;
             top: 0;
             left: calc(50% - #{$dim});
+
+            @include media(l) {
+                left: 5rem;
+            }
         }
 
         &::after {
@@ -29,6 +33,10 @@
             background-color: map-get($colors, red);
             top: $dim * 1.5;
             left: calc(50% - .5rem);
+
+            @include media(l) {
+                left: 6.5rem;
+            }
         }
 
         &:last-child {
@@ -36,17 +44,6 @@
             &::after {
                 height: calc(100% - #{$dim} * 1.5);
             }
-        }
-
-        h2,
-        h3 {
-            color: map-get($colors, green);
-            font-size: 2rem;
-            @include font($sans: false);
-            font-style: italic;
-            z-index: 1;
-            position: relative;
-            background-color: map-get($colors, off-white);
         }
 
         h2 {
@@ -62,11 +59,34 @@
         h3 {
             @include tilted-title;
             max-width: calc(50vw - #{$dim} * 1.5);
+
+            @include media(l) {
+                top: 1rem;
+            }
+        }
+
+        h2,
+        h3 {
+            color: map-get($colors, green);
+            font-size: 2rem;
+            @include font($sans: false);
+            font-style: italic;
+            z-index: 1;
+            position: relative;
+            background-color: map-get($colors, off-white);
+
+            @include media(l) {
+                margin-left: 15rem;
+            }
         }
 
         p {
             background-color: map-get($colors, off-white);
             padding: .5rem;
+
+            @include media(l) {
+                margin-left: 15rem;
+            }
 
             & + p {
                 margin-top: 0;
