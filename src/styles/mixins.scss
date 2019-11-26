@@ -68,6 +68,83 @@
     text-indent: -.5rem;
 }
 
+@mixin bubble {
+    background-color: transparent;
+    margin-bottom: 2.25rem;
+    font-size: 1.5rem;
+    color: map-get($colors, red);
+    font-style: italic;
+    font-weight: bold;
+    max-width: 75%;
+    transform: rotate(-5deg);
+
+    &::before,
+    &::after {
+        @include pseudo;
+    }
+
+    &::before {
+        background-color: map-get($colors, off-white);
+        width: 60%;
+        height: 110%;
+        z-index: -1;
+        border-radius: .5rem;
+        bottom: 0;
+    }
+
+    &::after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        bottom: -1.25rem;
+    }
+
+    @include media(m) {
+        max-width: 50%;
+        font-size: 2rem;
+    }
+
+    @include media(l) {
+        grid-column: 1 / 2;
+        justify-self: center;
+        margin: 3rem 0 0;
+    }
+}
+
+@mixin krishi-bubble {
+    margin: 3rem 0;
+    padding: 0 0 0 1rem;
+
+    &::before {
+        left: 0;
+    }
+
+    &::after {
+        border-width: 1.25rem 1.25rem 0 0;
+        border-color: map-get($colors, off-white) transparent transparent transparent;
+        left: 1.25rem;
+    }
+
+    @include media(l) {
+        margin-bottom: 0;
+    }
+}
+
+@mixin garrett-bubble {
+    text-align: right;
+    padding: 0 1rem 0 0;
+
+    &::before {
+        right: 0;
+    }
+
+    &::after {
+        border-width: 0 1.25rem 1.25rem 0;
+        border-color: transparent map-get($colors, off-white) transparent transparent;
+        right: 1.25rem;
+    }
+}
+
 @mixin content-container {
     @include tilted-top($color: map-get($colors, pink), $tilt: right);
     @include tilted-bottom($color: map-get($colors, pink), $tilt: right);

@@ -6,8 +6,6 @@
 
 //https://coolors.co/eba4ac-dd4d28-364f28-393e41-e7e5df
 
-// Added to site via gatsby-browser.js
-
 body {
     @include font();
     background-color: map-get($colors, off-white);

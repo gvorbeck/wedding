@@ -12,7 +12,7 @@ export default ({ data }) => (
         {data.allMarkdownRemark.edges.map(({ node, i }) => (
             <article key={node.id} className={storyStyles.story}>
                 <h1 className={[globalStyles.title, storyStyles.title].join(' ')}>{node.frontmatter.title}</h1>
-                <section className={globalStyles.pageContent} dangerouslySetInnerHTML={{ __html: node.html }} />
+                <section className={[globalStyles.pageContent, storyStyles.pageContent].join(' ')} dangerouslySetInnerHTML={{ __html: node.html }} />
             </article>
         ))}
     </Layout>

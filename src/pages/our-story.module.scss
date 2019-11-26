@@ -4,74 +4,30 @@
 
 .story {
 
+    @include media(l) {
+
+        .page-content > div {
+            display: grid;
+            grid-template: auto / repeat(2, 1fr);
+            align-items: flex-start;
+
+            & + div {
+                margin-top: 3rem;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
     p {
         background-color: map-get($colors, off-white);
         padding: .5rem;
+        position: relative;
 
-        &:nth-child(odd) {
-            background-color: transparent;
-            margin-bottom: 12vw;
-            font-size: 8vw;
-            color: map-get($colors, red);
-            font-style: italic;
-            font-weight: bold;
-            max-width: 75%;
-            transform: rotate(-5deg);
-
-            &::before,
-            &::after {
-                @include pseudo;
-            }
-
-            &::before {
-                background-color: map-get($colors, off-white);
-                width: 60%;
-                height: 120%;
-                z-index: -1;
-                border-radius: 2vw;
-            }
-
-            &::after {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                bottom: calc(-20% - 6vw);
-            }
-        }
-
-        &:nth-child(1) {
-            text-align: right;
-            padding: 0 1rem 0 0;
-
-            &::before {
-                right: 0;
-            }
-
-            &::after {
-                border-width: 0 6vw 6vw 0;
-                border-color: transparent map-get($colors, off-white) transparent transparent;
-                right: 4vw;
-            }
-        }
-
-        &:nth-child(3) {
-            margin-top: 3rem;
-            float: left;
-            padding: 0 0 0 1rem;
-
-            &::before {
-                left: 0;
-            }
-
-            &::after {
-                border-width: 6vw 6vw 0 0;
-                border-color: map-get($colors, off-white) transparent transparent transparent;
-                left: 4vw;
-            }
-        }
-
-        &:nth-child(even) {
-            clear: both;
+        @include media(l) {
+            grid-column: 2 / 3;
         }
     }
 }
