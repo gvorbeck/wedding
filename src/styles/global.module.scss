@@ -19,6 +19,11 @@ a {
     color: map-get($colors, red);
 }
 
+main > article {
+    padding: 10vw 0;
+    position: relative;
+}
+
 blockquote {
     $quote-vert: 0;
     padding: .5rem .5rem .5rem 1rem;

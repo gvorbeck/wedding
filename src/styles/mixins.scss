@@ -11,17 +11,19 @@
     color: map-get($colors, green);
     font-size: 3rem;
     line-height: 1;
-    margin: 1rem 0 2rem 1rem;
+    // margin: 1rem 0 2rem 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     z-index: 1;
     display: inline-block;
     border: rem(5px) solid;
     padding: 0 .25rem;
 }
 
-@mixin tilted-top($color: map-get($colors, off-white), $tilt: left, $height: #{rem(75px)}, $width: 100vw) {
+@mixin tilted-top($color: map-get($colors, off-white), $tilt: left, $height: 10vw, $width: 100vw) {
     position: relative;
 
     &::before {
@@ -42,7 +44,7 @@
     }
 }
 
-@mixin tilted-bottom($color: map-get($colors, off-white), $tilt: left, $height: #{rem(75px)}, $width: 100vw) {
+@mixin tilted-bottom($color: map-get($colors, off-white), $tilt: left, $height: 10vw, $width: 100vw) {
     position: relative;
 
     &::after {
@@ -149,7 +151,11 @@
     @include tilted-top($color: map-get($colors, pink), $tilt: right);
     @include tilted-bottom($color: map-get($colors, pink), $tilt: right);
     background-color: map-get($colors, pink);
-    padding: 1rem;
+    padding: 3rem 1rem 1rem;
+
+    @include media(m) {
+        padding: 2rem 1rem 1rem;
+    }
 
     p {
         z-index: 1;
