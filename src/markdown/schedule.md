@@ -1,22 +1,37 @@
 ---
 title: "Schedule"
 ---
-* ### Tonday, Junetemper 50th ###
 
-   ## Mehndi Party ##
+* ## Gauri Puja ##
 
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu nibh at turpis lacinia feugiat ac et purus. Quisque enim quam, bibendum pellentesque viverra ac, auctor vel eros. Nam vitae molestie magna. Duis gravida maximus lacus vel molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+   ![Goddess Gauri](../images/gauri.png)
+   
+   This is a ritual that is performed by the bride only. An idol of the Goddess Gauri, who represents purity, austerity and virtue, is placed on a plate containing rice and kumkum. After the bride has been dressed up, she offers her prayers and performs a short puja to the Gauri idol wishing for a happily married life ahead.
 
-   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam rhoncus urna, in porttitor tortor interdum eu. Suspendisse potenti. Vivamus mattis massa ligula, ut posuere lorem viverra a. Praesent et tortor diam. Sed aliquet quis velit nec semper. Maecenas in arcu non magna ultricies molestie ut quis purus. Etiam sed consectetur nunc. Cras tincidunt sit amet tellus congue consequat. Integer sed enim a leo aliquam finibus.
+* ## Kashi Yathra ##
 
-* ### Fursday, Smarch 28th ###
+   The groom’s party arrive at the wedding venue and the groom grabs and umbrella, walking sticks and some food items to go off to Varanasi or Kashi, renouncing all worldly attachments to pursue religious studies. The father of the bride then intercepts him outside the wedding hall and makes him see the virtues of the domestic life as opposed to hermit one. The father of the bride then promises the groom to give his daughter to him in marriage. The groom accepts this proposal and returns to the wedding venue to get married. The umbrella is to be kept with the groom throughout the wedding to remind him of the decision and his duties thereby.
 
-   ## Welcome Dinner ##
+* ## Pada Puja ##
 
-   Maecenas nec eros et velit ultrices tristique. Pellentesque consequat lacinia mi aliquam bibendum. Vivamus finibus ac est vel imperdiet. Curabitur eu viverra leo, et venenatis nunc. In a tortor arcu. Aenean at odio mi. Mauris facilisis neque leo, nec congue neque convallis lacinia. Proin mattis sagittis sem in egestas. Suspendisse finibus dolor lobortis tortor tincidunt egestas. Phasellus ac neque elit. Fusce dapibus sollicitudin nisl eu finibus. Cras imperdiet neque ac nulla posuere cursus. Curabitur laoreet ligula eu enim ornare hendrerit.
+   After the groom arrives at the wedding mandap, the parents of the bride washes his feet with holy water, sandalwood, milk, and kumkum. His feet are then wiped dry with flower petals.
 
-* ### Stedsday, Novtober 91st ###
+* ## Maalai Maatral ##
 
-   ## Wedding Ceremony ##
+   The bride is then brought into the wedding mandap and the couple exchange flower garlands as a first step of the wedding. The ritual is repeated three times and sometimes amid much playfulness where the bride/groom tries to evade garlanding by the other.
 
-   Mauris in velit vel tellus vehicula facilisis non vel nisi. Cras ultricies efficitur lorem, non porta felis fermentum eget. Sed semper, nunc nec consequat elementum, ligula lorem aliquam quam, sed ullamcorper massa est eget velit. Aenean et sapien eu enim accumsan congue. Pellentesque eget turpis scelerisque massa faucibus euismod ac id libero. Nunc at molestie est, vitae faucibus leo. Aenean mattis enim libero, eu congue leo aliquet scelerisque. Etiam iaculis, eros eget tincidunt varius, sapien ex sollicitudin eros, vehicula semper est quam eget justo. Phasellus at purus ut elit condimentum finibus. Aliquam varius lectus massa, sit amet porttitor erat vulputate ac. Maecenas dolor nulla, venenatis non leo et, eleifend vestibulum ex. Nulla ut ligula sit amet enim sodales rhoncus ac non mauris. Integer tempor vestibulum metus, vel pellentesque turpis commodo at. Vestibulum a erat id massa rutrum posuere vitae vitae elit. Proin scelerisque vehicula nulla, vitae iaculis nisi dictum quis.
+* ## Oonjal ##
+
+   Oonjal refers to a swing. During this ceremony, the couple is made to sit on a swing which is rocked gently. The women of the family surround the swing and sing Oonjal Pattu songs. The elders of the family come one by one and feed the couple milk and banana and bless them. Women from both the families carry colored rice balls around the couple seated in the swing in both clockwise and anticlockwise directions three times before throwing the balls in four cardinal directions to ward off evil energy. Older women also go around the couple holding an earthen lamp and pot filled with water three times in clockwise direction. The gentle rocking motion of the swing represents the turbulent situation that life may present to them.
+
+* ## Kanyadanam ##
+
+   The bride and groom is then asked to step off the swing. The end of the bride’s saree is tied to the end of groom’s angavastram. The bride’s mother then applies kajal on the groom’s eyes and the bride’s father washes his feet. Through this ritual the groom is viewed as representative of Lord Vishnu. The groom is then seated on the floor at his designated spot. The father of the bride sits facing the groom. The bride is seated on her father’s lap and a coconut is placed on her hands. The bride’s father then supports his daughter’s hands and offers the coconut to the groom together. The mother of the bride pours holy water over the coconut. Thus through this formal ceremony, the bride’s parents give her to the groom and requests him to take care of their daughter for the rest of their life. The bride and the groom’s hands are tied with a sacred thread to seal their union.
+
+* ## Muhurtham ##
+
+   After completion of the Kanyadanam ritual, the groom’s parents presents the bride with a nine yard silk saree symbolizing their acceptance of the bride into their family. The saree is draped around the bride’s shoulders while the groom applies vermillion to her hair parting. The bride then goes to change into the saree gifted to her by her in-laws. When she returns to the mandapam, a grass ring is placed on her head, over which the yoke of a plough is placed and a belt made of reed grass is placed around her waist. Water is poured over the yoke. This ritual is symbolic reminder of the fact that the bride and the groom together have to overcome the challenges of life. The Thaali is blessed by the priest and the groom ties the Thaali, or south Indian equivalent of a mangalsutra, around the bride’s neck. The first two knots of the Thaali is put in by the groom while the third and the final one is put in by the groom’s sister.
+
+* ## Saptapadi ##
+
+   The bride and the groom holds each other’s hands and go around the sacred fire seven times. Vedic mantras are chanted by the pries which outlines the seven sacred vows of a marriage. This ritual marks the symbolic beginning of the couple’s journey as husband and wife. Next the groom holds the bride’s left toe as she steps over a grindstone. This symbolically represents the solidity of their union.

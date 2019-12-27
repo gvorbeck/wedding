@@ -29,7 +29,7 @@
 
         &::after {
             width: 1rem;
-            height: calc(100% - #{$dim} * 1.25);
+            height: calc(100% - #{$dim});
             background-color: map-get($colors, red);
             top: $dim * 1.5;
             left: calc(50% - .5rem);
@@ -39,21 +39,31 @@
             }
         }
 
+        &:first-child {
+
+            span {
+                max-width: 25% !important;
+                margin: 0 !important;
+            }
+
+            img {
+                mix-blend-mode: darken;
+                filter: grayscale(1);
+                // max-width: 25%;
+                // height: auto;
+            }
+        }
+
         &:last-child {
 
             &::after {
-                height: calc(100% - #{$dim} * 1.5);
+                display: none;
             }
         }
 
         h2 {
             text-indent: -1vw;
-            margin: 1rem 0 0;
             padding-bottom: 1rem;
-
-            @include media(m) {
-                margin: 3rem 0 0;
-            }
         }
 
         h3 {
