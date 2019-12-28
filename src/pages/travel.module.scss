@@ -19,7 +19,7 @@
         }
 
         li {
-            $angle: .75deg;
+            @include tilted-box;
             display: flex;
             flex-direction: column;
             margin-top: 2rem;
@@ -64,22 +64,6 @@
                 }
             }
 
-            &:nth-child(odd) {
-                transform: rotate($angle);
-
-                & > * {
-                    transform: rotate(-$angle);
-                }
-            }
-
-            &:nth-child(even) {
-                transform: rotate(-$angle);
-
-                & > * {
-                    transform: rotate($angle);
-                }
-            }
-
             &:nth-child(1) {
                 background-image: url(../images/wine.svg);
             }
@@ -107,12 +91,8 @@
     }
 
     h2 {
-        color: map-get($colors, green);
+        @include tilted-title;
         line-height: 7rem;
-            @include tilted-title;
-            font-style: italic;
-            font-size: 2rem;
-        @include font($sans: false);
     }
 
     p {

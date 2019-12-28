@@ -11,7 +11,6 @@
     color: map-get($colors, green);
     font-size: 3rem;
     line-height: 1;
-    // margin: 1rem 0 2rem 1rem;
     font-weight: bold;
     text-transform: uppercase;
     position: absolute;
@@ -68,6 +67,30 @@
 @mixin tilted-title {
     transform: rotate(.75deg);
     text-indent: -.5rem;
+    font-style: italic;
+    font-size: 2rem;
+    color: map-get($colors, green);
+    line-height: 1.5;
+    @include font($sans: false);
+}
+
+@mixin tilted-box {
+    $angle: .75deg;
+    &:nth-child(odd) {
+        transform: rotate($angle);
+
+        & > * {
+            transform: rotate(-$angle);
+        }
+    }
+
+    &:nth-child(even) {
+        transform: rotate(-$angle);
+
+        & > * {
+            transform: rotate($angle);
+        }
+    }
 }
 
 @mixin bubble {

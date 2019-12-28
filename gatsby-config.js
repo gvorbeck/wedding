@@ -14,18 +14,18 @@ module.exports = {
                 name: 'Travel',
                 link: '/travel'
             },
-            {
-                name: 'Registry',
-                link: '/registry'
-            },
-            {
-                name: 'Things to Do',
-                link: '/things-to-do'
-            },
             // {
-            //     name: 'FAQs',
-            //     link: '/faq'
-            // }
+            //     name: 'Registry',
+            //     link: '/registry'
+            // },
+            // {
+            //     name: 'Things to Do',
+            //     link: '/things-to-do'
+            // },
+            {
+                name: 'FAQs',
+                link: '/faqs'
+            }
         ],
         description: `We're getting married`,
         author: `@jgvorbeck`,
