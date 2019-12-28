@@ -76,6 +76,8 @@
 
 @mixin tilted-box {
     $angle: .75deg;
+    background-color: map-get($colors, off-white);
+    padding: .5rem;
     &:nth-child(odd) {
         transform: rotate($angle);
 

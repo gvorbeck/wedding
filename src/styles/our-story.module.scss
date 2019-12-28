@@ -13,6 +13,8 @@
 
             & + div {
                 margin-top: 3rem;
+                border-top: .25rem solid map-get($colors, green);
+                padding-top: 2rem;
             }
 
             p {
@@ -22,8 +24,7 @@
     }
 
     p {
-        background-color: map-get($colors, off-white);
-        padding: .5rem;
+        @include tilted-box;
         position: relative;
 
         @include media(l) {

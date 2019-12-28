@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import globalStyles from "../styles/global.module.scss"
-import storyStyles from "./our-story.module.scss"
+import storyStyles from "../styles/our-story.module.scss"
 
 export default ({ data }) => (
     <Layout pageName={storyStyles.ourStory}>

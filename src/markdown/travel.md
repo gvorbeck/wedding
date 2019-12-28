@@ -35,7 +35,7 @@ title: "Travel"
 
    ### Newark Liberty International Airport ###
 
-   This is the best place to fly into.
+   This is the best airport to fly into.
 
    Using the __AirTrain__ at the airport, go to the __Newark Airport train station__.
 

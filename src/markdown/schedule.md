@@ -14,12 +14,12 @@ title: "Schedule"
 
 * ## Paada Puja ##
 
-   After the groom arrives at the wedding mandapam, the parents of the bride washes his feet with holy water, sandalwood, milk, and [kumkuma](https://en.wikipedia.org/wiki/Kumkuma). His feet are then wiped dry with flower petals.
+   After the groom arrives at the wedding [mandapam](https://en.wikipedia.org/wiki/Mandapa), the parents of the bride washes his feet with holy water, sandalwood, milk, and [kumkuma](https://en.wikipedia.org/wiki/Kumkuma). His feet are then wiped dry with flower petals.
 
 * ## Maalai Maatral ##
 
    ![Maalai Maatral](../images/maalai.jpg)
-   The bride is then brought into the wedding [mandapam](https://en.wikipedia.org/wiki/Mandapa) and the couple exchange flower garlands as a first step of the wedding. The ritual is repeated three times and sometimes amid much playfulness where the bride/groom tries to evade garlanding by the other.
+   The bride is then brought into the wedding mandapam and the couple exchange flower garlands as a first step of the wedding. The ritual is repeated three times and sometimes amid much playfulness where the bride/groom tries to evade garlanding by the other.
 
 * ## Oonjal ##
 
@@ -27,7 +27,7 @@ title: "Schedule"
 
 * ## Kanyadanam ##
 
-   The bride and groom is then asked to step off the swing. The end of the bride’s saree is tied to the end of groom’s angavastram. The bride’s mother then applies kajal on the groom’s eyes and the bride’s father washes his feet. Through this ritual the groom is viewed as representative of Lord Vishnu. The groom is then seated on the floor at his designated spot. The father of the bride sits facing the groom. The bride is seated on her father’s lap and a coconut is placed on her hands. The bride’s father then supports his daughter’s hands and offers the coconut to the groom together. The mother of the bride pours holy water over the coconut. Thus through this formal ceremony, the bride’s parents give her to the groom and requests him to take care of their daughter for the rest of their life. The bride and the groom’s hands are tied with a sacred thread to seal their union.
+   The bride and groom is then asked to step off the swing. The end of the bride’s saree is tied to the end of groom’s [angavastram](https://www.utsavpedia.com/attires/angavastram-thundu/). The bride’s mother then applies [kajal](https://en.wikipedia.org/wiki/Kohl_(cosmetics)) on the groom’s eyes and the bride’s father washes his feet. Through this ritual the groom is viewed as representative of Lord Vishnu. The groom is then seated on the floor at his designated spot. The father of the bride sits facing the groom. The bride is seated on her father’s lap and a coconut is placed on her hands. The bride’s father then supports his daughter’s hands and offers the coconut to the groom together. The mother of the bride pours holy water over the coconut. Thus through this formal ceremony, the bride’s parents give her to the groom and requests him to take care of their daughter for the rest of their life. The bride and the groom’s hands are tied with a sacred thread to seal their union.
 
 * ## Muhurtham ##
 
