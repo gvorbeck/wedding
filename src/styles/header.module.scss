@@ -123,13 +123,11 @@
             opacity: 1;
             background-color: transparent;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             height: auto;
             padding: 1rem;
-        }
-
-        @include media(l) {
-            padding: .5rem 1rem;
+            max-width: rem(1200px);
+            margin: 0 auto;
         }
 
         a {
@@ -140,123 +138,3 @@
         }
     }
 }
-
-
-// .site-header {
-//     $dimension: 3rem;
-//     background-color: map-get($colors, green);
-//     // text-align: center;
-//     position: fixed;
-//     top: 0;
-//     width: 100vw;
-//     z-index: 10;
-//
-//     &__logo {
-//         height: $dimension;
-//         fill: map-get($colors, off-white);
-//         position: absolute;
-//         opacity: .25;
-//         top: 0;
-//         left: calc(50% - #{$dimension} / 2);
-//     }
-//
-//     &__title {
-//         font-family: 'intro_regular';
-//         text-align: right;
-//         line-height: $dimension;
-//         font-size: $dimension;
-//         position: relative;
-//         line-height: 1;
-//         margin: 1rem 1rem 1rem 0;
-//     }
-//
-//     &__home {
-//         color: map-get($colors, pink);
-//         border: .5rem solid map-get($colors, pink);
-//         padding: .25rem .5rem;
-//         display: inline-block;
-//         text-decoration: none;
-//     }
-//
-//     @include media(l) {
-//         $dimension: 4rem;
-//
-//         &__logo {
-//             height: $dimension;
-//             left: calc(50% - #{$dimension} / 2);
-//         }
-//
-//         &__title {
-//             line-height: $dimension;
-//             font-size: $dimension;
-//         }
-//     }
-// }
-
-// .navigation {
-//     $rotate: .5deg;
-//
-
-//
-//     &__list {
-
-//
-
-//     }
-//
-//     &__list-item {
-//         line-height: 1;
-//         font-size: 3rem;
-//         transform: rotate($rotate);
-//         font-weight: bold;
-//
-//         &:nth-child(even) {
-//             transform: rotate(-$rotate);
-//
-//             & .navigation__list-span {
-//                 transform: rotate($rotate);
-//             }
-//         }
-//
-//         & + .navigation__list-item {
-//             margin-top: 3rem;
-//         }
-//
-//         @include media(m) {
-//             font-size: 1.25rem;
-//             transform: rotate(0deg);
-//             font-weight: lighter;
-//
-//             &:nth-child(even) {
-//                 transform: rotate(0deg);
-//
-//                 & .navigation__list-span {
-//                     transform: rotate(0deg);
-//                 }
-//             }
-//
-//             & + .navigation__list-item {
-//                 margin: 0;
-//             }
-//         }
-//     }
-//
-//     &__list-span {
-//         background-color: map-get($colors, off-white);
-//         padding: 0 1rem;
-//         transform: rotate(-$rotate);
-//
-//         @include media(m) {
-//             background-color: transparent;
-//         }
-//     }
-//
-//     &__link {
-//         text-decoration: none;
-//         color: map-get($colors, green);
-//
-//         @include media(m) {
-//             color: map-get($colors, off-white);
-//         }
-//     }
-// }

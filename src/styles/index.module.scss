@@ -4,170 +4,150 @@
 
 .home {
     background-color: map-get($colors, pink);
-    overflow: hidden;
 
     main {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        font-family: 'intro_regular';
+
+        @include media(s) {
+            section + section {
+                margin-top: 2rem;
+            }
+        }
 
         @include media(m) {
             display: grid;
             grid-template: repeat(2, auto) / repeat(2, 1fr);
-            grid-gap: 2rem 2rem;
-            padding: 2rem;
-        }
-    }
-
-    h2 {
-        $dim: .5rem;
-        color: map-get($colors, off-white);
-        font-size: 1.5rem;
-        background-size: cover;
-        border: .5rem solid;
-        padding: .5rem .5rem;
-        text-align: center;
-        line-height: 1.25;
-        letter-spacing: 14px;
-    }
-
-    h3 {
-        position: relative;
-        padding-top: 1.5rem;
-        font-size: 4rem;
-        color: map-get($colors, red);
-
-        @include media(m) {
-            font-size: 7rem;
+            grid-gap: 1rem;
         }
 
-        &::before,
-        &::after {
-            @include pseudo;
-            background-color: map-get($colors, red);
-        }
+        section {
 
-        &::before {
-            width: 9999px;
-            height: 1rem;
-            right: rem(5px);
-            top: 0;
-        }
+            &.box {
+                max-width: rem(370px);
+                margin-left: auto;
+                margin-right: auto;
 
-        &::after {
-            width: 2rem;
-            height: 2rem;
-            background-color: map-get($colors, pink);
-            border: 1rem solid map-get($colors, red);
-            border-radius: 50%;
-            top: calc(-1.5rem);
-            right: 0;
-        }
-    }
-
-    section {
-        margin: 0 1rem 1rem;
-        font-family: 'intro_regular';
-
-        @include media(m) {
-            margin: 0;
-        }
-
-        & + section {
-            margin-top: 2rem;
-
-            @include media(m) {
-                margin-top: 0;
-            }
-        }
-
-        img {
-            object-fit: contain !important;
-        }
-    }
-
-    .splash {
-        padding-top: 1rem;
-
-        @include media(m) {
-            grid-column: 1 / span 1;
-            grid-row: 2 / span 1;
-            padding-top: 0;
-        }
-
-        .img {
-            background-color: map-get($colors, off-white);
-            padding: 1rem;
-        }
-
-        img {
-            mix-blend-mode: darken;
-        }
-    }
-
-    .date {
-
-        @include media(m) {
-            grid-column: 1 / span 2;
-            grid-row: 1 / span 1;
-        }
-
-        span {
-            color: map-get($colors, red);
-            letter-spacing: rem(3.2px);
-            margin: 0 0 .25rem .25rem;
-            display: block;
-
-            @include media(m) {
-                font-size: 2rem;
-            }
-        }
-    }
-
-    .info {
-        background-color: map-get($colors, green);
-        position: relative;
-
-        @include media(m) {
-            grid-column: 2 / span 1;
-            grid-row: 2 / span 1;
-        }
-
-        .img {
-            filter: invert(1);
-            mix-blend-mode: exclusion;
-            padding: 1rem 4rem rem(72px);
-
-            @include media(m) {
-                padding: 1rem 4rem;
-            }
-        }
-
-        img {
-            mix-blend-mode: lighten;
-        }
-
-        p {
-            background-color: map-get($colors, pink);
-            border: .5rem solid map-get($colors, green);
-            color: map-get($colors, green);
-            border-top-width: 0;
-            padding: .5rem;
-            position: absolute;
-            width: 100%;
-            box-sizing: border-box;
-            bottom: 0;
-
-            span {
-                display: block;
-                text-align: center;
-
-                &:first-child {
-                    letter-spacing: rem(5.187px);
+                @include media(m) {
+                    max-width: rem(500px);
+                    margin-left: 0;
+                    margin-right: 0;
                 }
 
-                &:last-child {
-                    letter-spacing: rem(20.041px);
+                .title {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: .5rem;
+                    padding: .5rem;
+                    background-color: map-get($colors, pink);
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                .img {
+                    height: rem(300px);
+                    display: grid;
+                    align-items: center;
+                    padding: 1rem;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                }
+            }
+
+            &.splash {
+                $color: map-get($colors, off-white);
+                background-color: $color;
+                color: $color;
+
+                @include media(m) {
+                    grid-column: 1 / span 1;
+                    grid-row: 2 / span 1;
+                }
+
+                .title {
+                    letter-spacing: rem(14.755px);
+                }
+            }
+
+            &.info {
+                $color: map-get($colors, green);
+                background-color: $color;
+                color: $color;
+
+                @include media(m) {
+                    grid-column: 2 / span 1;
+                    grid-row: 2 / span 1;
+                    justify-self: end;
+                }
+
+                .title span {
+
+                    &:first-child {
+                        letter-spacing: rem(12px);
+                    }
+
+                    &:last-child {
+                        letter-spacing: rem(10.381px);
+                    }
+                }
+            }
+
+            &.date {
+                $color: map-get($colors, red);
+                color: $color;
+
+                @include media(m) {
+                    grid-column: 1 / span 2;
+                    grid-row: 1 / span 1;
+                }
+
+                span {
+                    display: block;
+                    margin: 0 0 .5rem;
+                    font-size: 1.25rem;
+                    letter-spacing: 1px;
+
+                    @include media(m) {
+                        font-size: 2rem;
+                        letter-spacing: rem(6.75px);
+                    }
+                }
+
+                h3 {
+                    position: relative;
+                    padding-top: 1.5rem;
+                    font-size: 4rem;
+
+                    @include media(m) {
+                        font-size: 8rem;
+                    }
+
+                    &::before,
+                    &::after {
+                        @include pseudo;
+                    }
+
+                    &::before {
+                        width: 9999px;
+                        height: 1rem;
+                        background-color: $color;
+                        top: 0;
+                        right: rem(1px);
+                    }
+
+                    &::after {
+                        $dim: 2rem;
+                        width: $dim;
+                        height: $dim;
+                        background-color: map-get($colors, pink);
+                        border: solid 1rem $color;
+                        border-radius: 50%;
+                        top: -1.5rem;
+                        right: 0;
+                    }
                 }
             }
         }

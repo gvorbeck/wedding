@@ -12,14 +12,12 @@ body {
 }
 
 main {
-    margin-top: 6.5rem;
+    max-width: rem(1200px);
+    margin: 6.5rem auto 0;
+    padding: 1rem;
 
     @include media(m) {
         margin-top: rem(152px);
-    }
-
-    @include media(l) {
-        margin-top: rem(136px);
     }
 
     p {
@@ -33,6 +31,6 @@ main {
 
 footer {
     text-align: center;
-    margin: 1rem 0 0;
+    padding: 1rem 0;
     position: relative;
 }
