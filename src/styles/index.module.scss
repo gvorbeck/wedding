@@ -7,11 +7,15 @@
     overflow: hidden;
 
     main {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
         @include media(m) {
             display: grid;
             grid-template: repeat(2, auto) / repeat(2, 1fr);
-            grid-gap: 1rem 1rem;
-            padding: 1rem;
+            grid-gap: 2rem 2rem;
+            padding: 2rem;
         }
     }
 
@@ -33,6 +37,10 @@
         font-size: 4rem;
         color: map-get($colors, red);
 
+        @include media(m) {
+            font-size: 7rem;
+        }
+
         &::before,
         &::after {
             @include pseudo;
@@ -40,9 +48,9 @@
         }
 
         &::before {
-            width: 100vw;
+            width: 9999px;
             height: 1rem;
-            left: calc(-2rem - 2rem - 1.9rem);
+            right: rem(5px);
             top: 0;
         }
 
@@ -71,6 +79,10 @@
             @include media(m) {
                 margin-top: 0;
             }
+        }
+
+        img {
+            object-fit: contain !important;
         }
     }
 
@@ -105,11 +117,16 @@
             letter-spacing: rem(3.2px);
             margin: 0 0 .25rem .25rem;
             display: block;
+
+            @include media(m) {
+                font-size: 2rem;
+            }
         }
     }
 
     .info {
         background-color: map-get($colors, green);
+        position: relative;
 
         @include media(m) {
             grid-column: 2 / span 1;
@@ -119,6 +136,11 @@
         .img {
             filter: invert(1);
             mix-blend-mode: exclusion;
+            padding: 1rem 4rem rem(72px);
+
+            @include media(m) {
+                padding: 1rem 4rem;
+            }
         }
 
         img {
@@ -131,17 +153,21 @@
             color: map-get($colors, green);
             border-top-width: 0;
             padding: .5rem;
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+            bottom: 0;
 
             span {
                 display: block;
-                text-align: right;
+                text-align: center;
 
                 &:first-child {
-                    letter-spacing: rem(5.53px);
+                    letter-spacing: rem(5.187px);
                 }
 
                 &:last-child {
-                    letter-spacing: rem(20.741px);
+                    letter-spacing: rem(20.041px);
                 }
             }
         }

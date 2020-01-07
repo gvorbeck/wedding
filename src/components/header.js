@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import headerStyles from "../styles/header.module.scss"
-import FireSVG from "../components/fireSVG"
+// import FireSVG from "../components/fireSVG"
 
 const Header = ({ siteTitle, menuLinks }) => (
     <header className={headerStyles.siteHeader}>
