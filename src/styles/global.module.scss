@@ -2,27 +2,53 @@
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
 
-// .title {
-//     @include page-title;
-// }
-//
-// .page-content {
-//     @include content-container;
+.title {
+    @include page-title;
+}
+
+.page-content {
+    @include content-container;
 //
 //     > * {
 //         position: relative;
 //         z-index: 1;
 //     }
-// }
+}
 
 a {
     color: map-get($colors, red);
 }
 
-// main > article {
+main > article {
 //     padding: 10vw 0;
-//     position: relative;
-// }
+    position: relative;
+
+    header {
+        margin-bottom: -5rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'intro_regular';
+        line-height: 1.5;
+        font-size: 1.25rem;
+        text-align: justify;
+        color: map-get($colors, green);
+    }
+
+    p + h1,
+    p + h2,
+    p + h3,
+    p + h4,
+    p + h5,
+    p + h6 {
+        margin-top: 1rem;
+    }
+}
 
 // blockquote {
 //     $quote-vert: 0;

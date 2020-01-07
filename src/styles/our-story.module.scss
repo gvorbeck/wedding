@@ -2,6 +2,20 @@
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
 
+.story {
+    header {
+        .title {
+            letter-spacing: rem(13.659px);
+        }
+
+        .img {
+            position: relative;
+            width: 125%;
+            left: -12.5%;
+        }
+    }
+}
+
 // .story {
 //
 //     @include media(l) {

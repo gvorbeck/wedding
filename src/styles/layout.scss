@@ -19,6 +19,7 @@ main {
     max-width: rem(1200px);
     margin: 6.5rem auto 0;
     padding: 1rem;
+    overflow: hidden;
 
     @include media(m) {
         margin-top: rem(152px);
