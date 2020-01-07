@@ -2,3 +2,11 @@
   $remSize: $size / 16px;
   @return #{$remSize}rem;
 }
+
+@font-face {
+    font-family: 'intro_regular';
+    src: url('../fonts/intro-webfont.woff2') format('woff2'),
+         url('../fonts/intro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,38 @@
+@import "../styles/reset.scss";
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,400i,700|IBM+Plex+Serif:400,400i&display=swap');
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+@import "../styles/functions.scss";
+
+//https://coolors.co/eba4ac-dd4d28-364f28-393e41-e7e5df
+
+body {
+    @include font();
+    background-color: map-get($colors, off-white);
+}
+
+main {
+    margin-top: 6.5rem;
+
+    @include media(m) {
+        margin-top: rem(152px);
+    }
+
+    @include media(l) {
+        margin-top: rem(136px);
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    p + p {
+        margin-top: 1rem;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 1rem 0 0;
+    position: relative;
+}

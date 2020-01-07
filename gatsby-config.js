@@ -1,6 +1,8 @@
 module.exports = {
     siteMetadata: {
         title: `Krishanti & Garrett`,
+        dateNumbers: `09.05.20`,
+        dateLong: `September 5th, 2020`,
         menuLinks: [
             {
                 name: 'Our Story',

@@ -1,0 +1,149 @@
+@import "../styles/variables.scss";
+@import "../styles/functions.scss";
+@import "../styles/mixins.scss";
+
+.home {
+    background-color: map-get($colors, pink);
+    overflow: hidden;
+
+    main {
+        @include media(m) {
+            display: grid;
+            grid-template: repeat(2, auto) / repeat(2, 1fr);
+            grid-gap: 1rem 1rem;
+            padding: 1rem;
+        }
+    }
+
+    h2 {
+        $dim: .5rem;
+        color: map-get($colors, off-white);
+        font-size: 1.5rem;
+        background-size: cover;
+        border: .5rem solid;
+        padding: .5rem .5rem;
+        text-align: center;
+        line-height: 1.25;
+        letter-spacing: 14px;
+    }
+
+    h3 {
+        position: relative;
+        padding-top: 1.5rem;
+        font-size: 4rem;
+        color: map-get($colors, red);
+
+        &::before,
+        &::after {
+            @include pseudo;
+            background-color: map-get($colors, red);
+        }
+
+        &::before {
+            width: 100vw;
+            height: 1rem;
+            left: calc(-2rem - 2rem - 1.9rem);
+            top: 0;
+        }
+
+        &::after {
+            width: 2rem;
+            height: 2rem;
+            background-color: map-get($colors, pink);
+            border: 1rem solid map-get($colors, red);
+            border-radius: 50%;
+            top: calc(-1.5rem);
+            right: 0;
+        }
+    }
+
+    section {
+        margin: 0 1rem 1rem;
+        font-family: 'intro_regular';
+
+        @include media(m) {
+            margin: 0;
+        }
+
+        & + section {
+            margin-top: 2rem;
+
+            @include media(m) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .splash {
+        padding-top: 1rem;
+
+        @include media(m) {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            padding-top: 0;
+        }
+
+        .img {
+            background-color: map-get($colors, off-white);
+            padding: 1rem;
+        }
+
+        img {
+            mix-blend-mode: darken;
+        }
+    }
+
+    .date {
+
+        @include media(m) {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 1;
+        }
+
+        span {
+            color: map-get($colors, red);
+            letter-spacing: rem(3.2px);
+            margin: 0 0 .25rem .25rem;
+            display: block;
+        }
+    }
+
+    .info {
+        background-color: map-get($colors, green);
+
+        @include media(m) {
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        .img {
+            filter: invert(1);
+            mix-blend-mode: exclusion;
+        }
+
+        img {
+            mix-blend-mode: lighten;
+        }
+
+        p {
+            background-color: map-get($colors, pink);
+            border: .5rem solid map-get($colors, green);
+            color: map-get($colors, green);
+            border-top-width: 0;
+            padding: .5rem;
+
+            span {
+                display: block;
+                text-align: right;
+
+                &:first-child {
+                    letter-spacing: rem(5.53px);
+                }
+
+                &:last-child {
+                    letter-spacing: rem(20.741px);
+                }
+            }
+        }
+    }
+}
