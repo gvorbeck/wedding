@@ -2,33 +2,33 @@
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
 
-.story {
-
-    @include media(l) {
-
-        .page-content > div {
-            display: grid;
-            grid-template: auto / repeat(2, 1fr);
-            align-items: flex-start;
-
-            & + div {
-                margin-top: 3rem;
-                border-top: .25rem solid map-get($colors, green);
-                padding-top: 2rem;
-            }
-
-            p {
-                margin: 0;
-            }
-        }
-    }
-
-    p {
-        @include tilted-box;
-        position: relative;
-
-        @include media(l) {
-            grid-column: 2 / 3;
-        }
-    }
-}
+// .story {
+//
+//     @include media(l) {
+//
+//         .page-content > div {
+//             display: grid;
+//             grid-template: auto / repeat(2, 1fr);
+//             align-items: flex-start;
+//
+//             & + div {
+//                 margin-top: 3rem;
+//                 border-top: .25rem solid map-get($colors, green);
+//                 padding-top: 2rem;
+//             }
+//
+//             p {
+//                 margin: 0;
+//             }
+//         }
+//     }
+//
+//     p {
+//         @include tilted-box;
+//         position: relative;
+//
+//         @include media(l) {
+//             grid-column: 2 / 3;
+//         }
+//     }
+// }

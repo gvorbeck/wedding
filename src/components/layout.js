@@ -28,7 +28,7 @@ const Layout = ({ children, pageName }) => {
   `)
 
   return (
-    <div className={pageName}>
+    <div className={[pageName, 'content'].join(' ')}>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer>

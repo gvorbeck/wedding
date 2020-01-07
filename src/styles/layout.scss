@@ -9,6 +9,10 @@
 body {
     @include font();
     background-color: map-get($colors, off-white);
+
+    & > div > div > .content {
+        background-color: map-get($colors, pink);
+    }
 }
 
 main {
