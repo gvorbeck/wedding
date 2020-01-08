@@ -2,29 +2,36 @@
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
 
-.title {
-    @include page-title;
-}
-
-.page-content {
-    @include content-container;
-//
-//     > * {
-//         position: relative;
-//         z-index: 1;
-//     }
-}
-
 a {
     color: map-get($colors, red);
 }
 
 main > article {
-//     padding: 10vw 0;
     position: relative;
 
+    @include media(m) {
+        display: grid;
+        grid-template: auto / 1fr 2fr;
+    }
+
     header {
-        margin-bottom: -5rem;
+
+        @include media(m) {
+            margin-bottom: 0;
+        }
+
+        .title {
+            @include page-title;
+        }
+
+        .img {
+            position: relative;
+            max-width: rem(920px);
+        }
+    }
+
+    .page-content {
+        @include content-container;
     }
 
     h1,
@@ -49,30 +56,3 @@ main > article {
         margin-top: 1rem;
     }
 }
-
-// blockquote {
-//     $quote-vert: 0;
-//     padding: .5rem .5rem .5rem 1rem;
-//     background-color: rgba(map-get($colors, red), .1);
-//     margin: .5rem;
-//     border-left: .5rem solid rgba(map-get($colors, red), .25);
-//     position: relative;
-//     font-style: italic;
-//
-//     &::before {
-//         @include pseudo($content: '"');
-//         @include font($sans: false);
-//         color: rgba(map-get($colors, red), .5);
-//         font-size: 3rem;
-//     }
-//
-//     &::before {
-//         top: $quote-vert;
-//         left: 0;
-//     }
-//
-//     &::after {
-//         bottom: $quote-vert;
-//         right: .5rem;
-//     }
-// }

@@ -25,9 +25,6 @@
         section {
 
             &.box {
-                // max-width: rem(370px);
-                // margin-left: auto;
-                // margin-right: auto;
 
                 @include media(m) {
                     max-width: rem(500px);

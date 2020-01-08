@@ -9,18 +9,18 @@ import storyStyles from "../styles/our-story.module.scss"
 
 export default ({ data }) => (
     <Layout pageName={storyStyles.ourStory}>
-    <SEO title="Our Story" />
-    {data.allMarkdownRemark.edges.map(({ node, i }) => (
-        <article key={node.id} className={storyStyles.story}>
-            <header>
-                <h1 className={[globalStyles.title, storyStyles.title].join(' ')}>{node.frontmatter.title}</h1>
-                <div className={storyStyles.img}>
-                    <Img fluid={data.imgCouple.childImageSharp.fluid}/>
-                </div>
-            </header>
-            <section className={[globalStyles.pageContent, storyStyles.pageContent].join(' ')} dangerouslySetInnerHTML={{ __html: node.html }} />
-        </article>
-    ))}
+        <SEO title="Our Story" />
+        {data.allMarkdownRemark.edges.map(({ node, i }) => (
+            <article key={node.id} className={storyStyles.story}>
+                <header>
+                    <h1 className={[globalStyles.title, storyStyles.title].join(' ')}>{node.frontmatter.title}</h1>
+                    <div className={[storyStyles.img, globalStyles.img].join(' ')}>
+                        <Img fluid={data.imgCouple.childImageSharp.fluid}/>
+                    </div>
+                </header>
+                <section className={[globalStyles.pageContent, storyStyles.pageContent].join(' ')} dangerouslySetInnerHTML={{ __html: node.html }} />
+            </article>
+        ))}
     </Layout>
 )
 

@@ -110,12 +110,24 @@
         position: absolute;
         width: 100vw;
         height: 100vh;
-        padding: 5rem 1rem;
+        padding: 1rem;
         box-sizing: border-box;
         background-color: map-get($colors, pink);
         opacity: 0;
         top: -100vh;
         transition: opacity .75s ease-out;
+
+        li {
+
+            @include media(s) {
+                font-size: 2rem;
+                letter-spacing: 10px;
+
+                & + li {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
 
         @include media(m) {
             position: static;
