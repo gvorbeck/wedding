@@ -4,15 +4,149 @@
 
 .dates {
     header {
-        margin-bottom: -155vw;
+        margin-bottom: -154vw;
 
         .title {
-            letter-spacing: rem(24px);
+            letter-spacing: rem(18px);
         }
 
         .img {
             width: 150%;
             left: -25%;
+        }
+    }
+
+    .page-content {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    ul {
+        position: relative;
+        z-index: 1;
+    }
+
+    li {
+        background-color: map-get($colors, off-white);
+        padding: 1rem;
+        position: relative;
+
+        &:nth-child(1) {
+
+            h2 {
+                letter-spacing: rem(18.334px);
+            }
+        }
+
+        &:nth-child(2) {
+
+            h2 {
+                letter-spacing: rem(15.89px);
+            }
+        }
+
+        &:nth-child(3) {
+
+            h2 {
+                letter-spacing: rem(17.769px);
+            }
+        }
+
+        &:nth-child(4) {
+
+            h2 {
+                letter-spacing: rem(9.165px);
+            }
+        }
+
+        &:nth-child(5) {
+
+            h2 {
+                letter-spacing: rem(38px);
+            }
+        }
+
+        &:nth-child(6) {
+
+            h2 {
+                letter-spacing: rem(16px);
+            }
+        }
+
+        &:nth-child(7) {
+
+            h2 {
+                letter-spacing: rem(19px);
+            }
+        }
+
+        &:nth-child(8) {
+
+            h2 {
+                letter-spacing: rem(21px);
+            }
+        }
+
+        &:last-child::before {
+            display: none;
+        }
+
+        p {
+            overflow: hidden;
+        }
+
+        span {
+            @include media(m) {
+                width: 50%;
+                margin: 0 1rem 1rem 0 !important;
+                float: left;
+            }
+        }
+
+        &::before,
+        &::after {
+            @include pseudo;
+        }
+
+        &::before {
+            width: 1rem;
+            height: calc(100% + 3rem);
+            background-color: map-get($colors, red);
+            top: -1.25rem;
+            left: calc(50% - .5rem);
+            z-index: -1;
+
+            @include media(m) {
+                top: 4.5rem;
+                left: -8.5rem;
+            }
+        }
+
+        &::after {
+            @include dot;
+            top: -4.99rem;
+            left: calc(50% - 2rem);
+            background-color: transparent;
+
+            @include media(m) {
+                top: 1rem;
+                left: -10rem;
+            }
+        }
+
+        & + li {
+            // position: relative;
+            margin-top: 6rem;
+
+            // &::before {
+            //     @include pseudo;
+            //     width: calc(100% + 2rem);
+            //     top: 1rem;
+            //     left: -1rem;
+            //     height: 2rem;
+            //     background-color: map-get($colors, pink);
+            //     // mix-blend-mode: exclusion;
+            // }
         }
     }
 }

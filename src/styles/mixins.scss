@@ -9,7 +9,6 @@
 
 @mixin page-title {
     color: map-get($colors, red);
-    // background-color: map-get($colors, pink);
     font-family: 'intro_regular';
     font-size: 2rem;
     border: .5rem solid;
@@ -175,6 +174,15 @@
 //     }
 // }
 
+@mixin dot {
+    $dim: 2rem;
+    width: $dim;
+    height: $dim;
+    background-color: map-get($colors, pink);
+    border: solid 1rem map-get($colors, red);
+    border-radius: 50%;
+}
+
 @mixin content-container {
     // @include tilted-top($color: map-get($colors, pink), $tilt: right);
     // @include tilted-bottom($color: map-get($colors, pink), $tilt: right);
@@ -191,6 +199,10 @@
         z-index: 1;
         position: relative;
         font-size: 1.25rem;
+    }
+
+    img {
+        box-shadow: none !important;
     }
 
     @include media(m) {

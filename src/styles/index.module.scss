@@ -136,12 +136,7 @@
                     }
 
                     &::after {
-                        $dim: 2rem;
-                        width: $dim;
-                        height: $dim;
-                        background-color: map-get($colors, pink);
-                        border: solid 1rem $color;
-                        border-radius: 50%;
+                        @include dot;
                         top: -1.5rem;
                         right: 0;
                     }
