@@ -119,6 +119,7 @@
             @include media(m) {
                 top: 4.5rem;
                 left: -8.5rem;
+                height: calc(100% + 1rem);
             }
         }
 
@@ -137,6 +138,10 @@
         & + li {
             // position: relative;
             margin-top: 6rem;
+
+            @include media(m) {
+                margin-top: 4rem;
+            }
 
             // &::before {
             //     @include pseudo;
