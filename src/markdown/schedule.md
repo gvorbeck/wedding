@@ -31,6 +31,7 @@ title: "Schedule"
 
 * ## Muhurtham ##
 
+   ![Mangalsutra](../images/mangalsutra_lo.png)
    After completion of the Kanyadanam ritual, the groom’s parents presents the bride with a nine yard silk saree symbolizing their acceptance of the bride into their family. The saree is draped around the bride’s shoulders while the groom applies vermillion to her hair parting. The bride then goes to change into the saree gifted to her by her in-laws. When she returns to the mandapamam, a grass ring is placed on her head, over which the yoke of a plough is placed and a belt made of reed grass is placed around her waist. Water is poured over the yoke. This ritual is symbolic reminder of the fact that the bride and the groom together have to overcome the challenges of life. The Thaali is blessed by the priest and the groom ties the Thaali, or south Indian equivalent of a mangalsutra, around the bride’s neck. The first two knots of the Thaali is put in by the groom while the third and the final one is put in by the groom’s sister.
 
 * ## Saptapadi ##
