@@ -4,16 +4,42 @@ title: "Schedule"
 
 * ## Welcome Dinner ##
 
-   This is a ritual that is performed by the bride only. An idol of the [Goddess Gauri](https://en.wikipedia.org/wiki/Mahagauri), who represents purity, austerity and virtue, is placed on a plate containing rice and kumkum. After the bride has been dressed up, she offers her prayers and performs a short [puja](https://en.wikipedia.org/wiki/Puja_(Hinduism)) to the Gauri idol wishing for a happily married life ahead.
+   Friday, September 4, 2020  
+   6:00 pm - 9:00 pm  
+   Location TBD  
+   Casual Attire
+
+   We’re excited to welcome all of our guests the night before at a casual get together – all are welcome to join us!
+
+   Please RSVP on your forthcoming invitation
 
 * ## Ceremony ##
 
-   The groom’s party arrive at the wedding venue and the groom brings an umbrella, walking sticks and some food items to go off to [Varanasi](https://en.wikipedia.org/wiki/Varanasi), renouncing all worldly attachments to pursue religious studies. The father of the bride then intercepts him outside the wedding hall and makes him see the virtues of the domestic life as opposed to a hermitic existence. The father of the bride then promises the groom to give his daughter to him in marriage. The groom accepts this proposal and returns to the wedding venue to get married. The umbrella is to be kept with the groom throughout the wedding to remind him of the decision and his duties thereby.
+   Saturday, September 5, 2020  
+   2:30 pm  
+   Unionville Vineyards  
+   9 Rocktown Road  
+   Ringoes, NJ 08551  
+   Semi-Formal Attire
+
+   We invite our guests to arrive at 2:30 pm to join the Bharat procession, immediately followed by the ceremony. Light refreshments will be available.
 
 * ## Reception ##
 
-   After the groom arrives at the wedding [mandapam](https://en.wikipedia.org/wiki/Mandapa), the parents of the bride washes his feet with holy water, sandalwood, milk, and [kumkuma](https://en.wikipedia.org/wiki/Kumkuma). His feet are then wiped dry with flower petals.
+   Saturday, September 5, 2020  
+   5:00 pm - 10:00 pm  
+   Unionville Vineyards  
+   9 Rocktown Road  
+   Ringoes, NJ 08551  
+   Semi-Formal Attire
+
+   Time to eat and get down! Join us for cocktails, performances, dinner, and dancing. Our reception will be outdoors in a tent until sunset, after which we will move down to the wine cellar for more dancing!
 
 * ## Farewell Brunch ##
 
-   The bride is then brought into the wedding mandapam and the couple exchange flower garlands as a first step of the wedding. The ritual is repeated three times and sometimes amid much playfulness where the bride/groom tries to evade garlanding by the other.
+   Sunday, September 6, 2020  
+   Some time in the AM  
+   Location TBD  
+   Casual Attire
+   
+   We’ll all need some coffee and food as we recover from partying our faces off the night before. And we’ll want to bid all of our guests farewell in the light of day – all are welcome!
