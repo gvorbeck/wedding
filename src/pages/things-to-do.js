@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import globalStyles from "../styles/global.module.scss"
-import ttdStyles from "./things-to-do.module.scss"
+import ttdStyles from "../styles/things-to-do.module.scss"
 
 export default ({ data }) => (
     <Layout pageName={ttdStyles.stuff}>

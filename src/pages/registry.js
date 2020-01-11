@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import globalStyles from "../styles/global.module.scss"
-import registryStyles from "./registry.module.scss"
+import registryStyles from "../styles/registry.module.scss"
 
 export default ({ data }) => (
     <Layout pageName={registryStyles.schedule}>

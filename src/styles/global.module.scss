@@ -27,11 +27,70 @@ main > article {
         .img {
             position: relative;
             max-width: rem(920px);
+
+            @include media(m) {
+                top: 8rem;
+            }
         }
     }
 
     .page-content {
         @include content-container;
+
+        ul {
+            position: relative;
+            z-index: 1;
+        }
+
+        li {
+            background-color: map-get($colors, off-white);
+            padding: 1rem;
+            position: relative;
+
+            &::before,
+            &::after {
+                @include pseudo;
+            }
+
+            &::before {
+                width: 1rem;
+                height: calc(100% + 3rem);
+                background-color: map-get($colors, red);
+                top: -1.25rem;
+                left: calc(50% - .5rem);
+                z-index: -1;
+
+                @include media(m) {
+                    top: 4.5rem;
+                    left: -8.5rem;
+                    height: calc(100% + 1rem);
+                }
+            }
+
+            &::after {
+                @include dot;
+                top: -4.99rem;
+                left: calc(50% - 2rem);
+                background-color: transparent;
+
+                @include media(m) {
+                    top: 1rem;
+                    left: -10rem;
+                }
+            }
+
+            &:last-child::before {
+                display: none;
+            }
+
+            & + li {
+                margin-top: 6rem;
+
+                @include media(m) {
+                    margin-top: 4rem;
+                }
+            }
+        }
     }
 
     h1,

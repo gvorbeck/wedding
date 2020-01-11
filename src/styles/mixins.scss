@@ -186,8 +186,8 @@
 @mixin content-container {
     // @include tilted-top($color: map-get($colors, pink), $tilt: right);
     // @include tilted-bottom($color: map-get($colors, pink), $tilt: right);
-    background-color: map-get($colors, off-white);
-    padding: 1rem;
+    // background-color: map-get($colors, off-white);
+    // padding: 1rem;
     // z-index: 1;
     position: relative;
 

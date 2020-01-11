@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,17 +12,24 @@ export default ({ data }) => (
         <SEO title="FAQs" />
         {data.allMarkdownRemark.edges.map(({ node, i }) => (
             <article key={node.id} className={faqStyles.article}>
-                <h1 className={[globalStyles.title, faqStyles.title].join(' ')}>{node.frontmatter.title}</h1>
+                <header>
+                    <h1 className={[globalStyles.title, faqStyles.title].join(' ')}>{node.frontmatter.title}</h1>
+                    <div className={[faqStyles.img, globalStyles.img].join(' ')}>
+                        <Img fluid={data.imgGirl.childImageSharp.fluid}/>
+                    </div>
+                </header>
                 <section className={[globalStyles.pageContent, faqStyles.pageContent].join(' ')}>
                     <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                    <dl className={faqStyles.questions}>
+                    <ul className={faqStyles.questions}>
                         {node.frontmatter.questions.map((question) =>
-                            <>
-                                <dt><h2>{question.q}</h2></dt>
-                                <dd><p>{question.a}</p></dd>
-                            </>
+                            <li>
+                                <dl>
+                                    <dt><h2>{question.q}</h2></dt>
+                                    <dd><p>{question.a}</p></dd>
+                                </dl>
+                            </li>
                         )}
-                    </dl>
+                    </ul>
                 </section>
             </article>
         ))}
@@ -44,6 +52,13 @@ export const query = graphql`
           id
         }
       }
+    },
+    imgGirl: file(relativePath: { eq: "dancing-girl_lo.png" }) {
+        childImageSharp {
+            fluid(maxWidth: 600) {
+                ...GatsbyImageSharpFluid
+            }
+        }
     }
   }
 `

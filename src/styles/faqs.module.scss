@@ -2,19 +2,34 @@
 @import "../styles/mixins.scss";
 @import "../styles/functions.scss";
 
-.page-content {
+.article {
+    header {
+        margin-bottom: -154vw;
 
-    dt {
-        @include tilted-title;
-    }
+        .title {
+            letter-spacing: rem(20px);
+        }
 
-    dd {
-        background-color: map-get($colors, off-white);
-        padding: 1rem;
-        @include tilted-box;
-    }
-
-    dd + dt {
-        margin-top: 2rem;
+        .img {
+            width: 150%;
+            left: -25%;
+        }
     }
 }
+
+// .page-content {
+//
+//     dt {
+//         @include tilted-title;
+//     }
+//
+//     dd {
+//         background-color: map-get($colors, off-white);
+//         padding: 1rem;
+//         @include tilted-box;
+//     }
+//
+//     dd + dt {
+//         margin-top: 2rem;
+//     }
+// }

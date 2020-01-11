@@ -5,20 +5,20 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import globalStyles from "../styles/global.module.scss"
-import scheduleStyles from "../styles/schedule.module.scss"
+import ceremonyStyles from "../styles/ceremony.module.scss"
 
 export default ({ data }) => (
-    <Layout pageName={scheduleStyles.schedule}>
-        <SEO title="Schedule" />
+    <Layout pageName={ceremonyStyles.ceremony}>
+        <SEO title="Ceremony" />
         {data.allMarkdownRemark.edges.map(({ node, i }) => (
-            <article key={node.id} className={scheduleStyles.dates}>
+            <article key={node.id} className={ceremonyStyles.dates}>
                 <header>
-                    <h1 className={[globalStyles.title, scheduleStyles.title].join(' ')}>{node.frontmatter.title}</h1>
-                    <div className={[scheduleStyles.img, globalStyles.img].join(' ')}>
+                    <h1 className={[globalStyles.title, ceremonyStyles.title].join(' ')}>{node.frontmatter.title}</h1>
+                    <div className={[ceremonyStyles.img, globalStyles.img].join(' ')}>
                         <Img fluid={data.imgGirl.childImageSharp.fluid}/>
                     </div>
                 </header>
-                <section className={[globalStyles.pageContent, scheduleStyles.pageContent].join(' ')} dangerouslySetInnerHTML={{ __html: node.html }} />
+                <section className={[globalStyles.pageContent, ceremonyStyles.pageContent].join(' ')} dangerouslySetInnerHTML={{ __html: node.html }} />
             </article>
         ))}
     </Layout>
@@ -26,7 +26,7 @@ export default ({ data }) => (
 
 export const query = graphql`
 {
-    allMarkdownRemark(filter: {frontmatter: {title: {eq: "Schedule"}}}) {
+    allMarkdownRemark(filter: {frontmatter: {title: {eq: "Ceremony"}}}) {
         edges {
             node {
                 frontmatter {
@@ -37,7 +37,7 @@ export const query = graphql`
             }
         }
     },
-    imgGirl: file(relativePath: { eq: "bride_lo.png" }) {
+    imgGirl: file(relativePath: { eq: "dancing-girl_lo.png" }) {
         childImageSharp {
             fluid(maxWidth: 600) {
                 ...GatsbyImageSharpFluid
