@@ -53,7 +53,7 @@ export const query = graphql`
         }
       }
     },
-    imgGirl: file(relativePath: { eq: "dancing-girl_lo.png" }) {
+    imgGirl: file(relativePath: { eq: "ganepati_lo.png" }) {
         childImageSharp {
             fluid(maxWidth: 600) {
                 ...GatsbyImageSharpFluid
