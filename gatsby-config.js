@@ -20,10 +20,11 @@ module.exports = {
                 name: 'Travel',
                 link: '/travel'
             },
-            // {
-            //     name: 'Registry',
-            //     link: '/registry'
-            // },
+            {
+                name: 'Registry',
+                link: 'https://www.zola.com/registry/krishantiandgarrett?preview=true',
+                ext: true
+            },
             // {
             //     name: 'Things to Do',
             //     link: '/things-to-do'

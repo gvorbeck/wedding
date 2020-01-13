@@ -17,7 +17,13 @@ const Header = ({ siteTitle, menuLinks }) => (
             <ul>
                 {menuLinks.map(link => (
                     <li key={link.name}>
-                        <span><Link to={link.link}>{link.name}</Link></span>
+                        <span>
+                            {!link.ext ?
+                                <Link to={link.link}>{link.name}</Link>
+                            : (
+                                <a href={link.link} rel="nofollow" target="_blank" title={link.name}>{link.name}</a>
+                            )}
+                        </span>
                     </li>
                 ))}
             </ul>

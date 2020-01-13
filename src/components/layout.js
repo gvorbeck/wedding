@@ -21,6 +21,7 @@ const Layout = ({ children, pageName }) => {
           menuLinks {
               name
               link
+              ext
           }
         }
       }
