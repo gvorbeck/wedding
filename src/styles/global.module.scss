@@ -37,6 +37,14 @@ main > article {
     .page-content {
         @include content-container;
 
+        em {
+            font-style: italic;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
         ul {
             position: relative;
             z-index: 1;
