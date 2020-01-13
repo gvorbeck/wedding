@@ -21,7 +21,7 @@ const Header = ({ siteTitle, menuLinks }) => (
                             {!link.ext ?
                                 <Link to={link.link}>{link.name}</Link>
                             : (
-                                <a href={link.link} rel="nofollow" target="_blank" title={link.name}>{link.name}</a>
+                                <a href={link.link} rel="noopener noreferrer" target="_blank" title={link.name}>{link.name}</a>
                             )}
                         </span>
                     </li>

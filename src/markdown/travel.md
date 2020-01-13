@@ -6,8 +6,8 @@ title: "Travel"
    Unionville Vineyards  
    9 Rocktown Rd  
    Ringoes, NJ 08551  
-   <a href="https://goo.gl/maps/RsYQhQ7h11MaPMZH8" target="\_blank" rel="nofollow" title="Unionville Vineyards Map">Map</a>  
-   <a href="https://unionvillevineyards.com/" target="\_blank" rel="nofollow" title="Unionville Vineyards">Website</a>  
+   <a href="https://goo.gl/maps/RsYQhQ7h11MaPMZH8" target="\_blank" rel="noopener noreferrer" title="Unionville Vineyards Map">Map</a>  
+   <a href="https://unionvillevineyards.com/" target="\_blank" rel="noopener noreferrer" title="Unionville Vineyards">Website</a>  
 
    <div class="layout--img-w-quote">
 

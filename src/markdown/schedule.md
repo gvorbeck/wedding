@@ -20,7 +20,7 @@ title: "Schedule"
    *Unionville Vineyards  
    9 Rocktown Road  
    Ringoes, NJ 08551*  
-   <a href="https://unionvillevineyards.com/" target="_blank" rel="nofollow" title="Unionville Vineyards">Website</a>  
+   <a href="https://unionvillevineyards.com/" target="_blank" rel="noopener noreferrer" title="Unionville Vineyards">Website</a>  
    Semi-Formal Attire
 
    We invite our guests to arrive at 2:30 pm to join the Bharat procession, immediately followed by the ceremony. Light refreshments will be available.
