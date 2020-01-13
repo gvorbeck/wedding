@@ -5,22 +5,23 @@ title: "Travel"
 
    Unionville Vineyards  
    9 Rocktown Rd  
-   Ringoes, NJ 08551
+   Ringoes, NJ 08551  
+   <a href="https://goo.gl/maps/RsYQhQ7h11MaPMZH8" target="\_blank" rel="nofollow" title="Unionville Vineyards Map">Map</a>  
+   <a href="https://unionvillevineyards.com/" target="\_blank" rel="nofollow" title="Unionville Vineyards">Website</a>  
+
+   <div class="layout--img-w-quote">
 
    ![Unionville Vineyards](../images/unionville.jpg)
 
    > In the heart of America’s Colonial Crescent, Unionville Vineyards offers breathtaking natural beauty, bountiful terroir, historic significance and award-winning artisanal wines.
 
-   [Website](https://unionvillevineyards.com/)
+   </div>
 
 * ## Hotel ##
 
-   ### Hotel Name ###
-   123 Main St.   
-   Town-Name, NJ 12345   
-   123-456-7890
+   We're working on securing a hotel block for our guests with transportation to and from venue.
 
-   We have a block of discounted rooms reserved under the code on your invitation.
+   Check back soon for more information.
 
 * ## Airport ##
 
@@ -28,10 +29,12 @@ title: "Travel"
 
    This is the best airport to fly into.
 
-   Using the __AirTrain__ at the airport, go to the __Newark Airport train station__.
+   From the airport, you can take a train or rent a car to get to the venue area.
 
 * ## Train ##
 
    ### NJ Transit ###
 
-   Take a southbound __Northeast Corridor (NEC)__ train to the __Princeton Junction Station__. This train can be picked up at both __New York Penn Station__ and __Newark Airport train station__.
+   If you're coming to our wedding from the Newark airport or NYC, take a southbound __Northeast Corridor (NEC)__ train to the __Princeton Junction Station__. This train can be picked up at both __New York Penn Station__ and __Newark Airport train station__.
+
+   Taking the train from NY Penn Station will require about 1.5 hours to reach Princeton Junction Station.

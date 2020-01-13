@@ -35,18 +35,49 @@
                 &:nth-child(2) {
                     h2 {
                         letter-spacing: rem(60px);
+
+                        &::before {
+                            background-image: url(../images/hotel.svg);
+                        }
                     }
                 }
 
                 &:nth-child(3) {
                     h2 {
                         letter-spacing: rem(36px);
+
+                        &::before {
+                            background-image: url(../images/plane.svg);
+                        }
                     }
                 }
 
                 &:nth-child(4) {
                     h2 {
                         letter-spacing: rem(62px);
+
+                        &::before {
+                            background-image: url(../images/train.svg);
+                        }
+                    }
+                }
+
+                h2 {
+                    position: relative;
+
+                    &::before {
+                        @include pseudo;
+                        width: 3rem;
+                        height: 3rem;
+                        background-size: cover;
+                        top: -5.5rem;
+                        left: calc(50% - 1.5rem);
+                        z-index: 1;
+
+                        @include media(m) {
+                            top: 0.5rem;
+                            left: -10.5rem;
+                        }
                     }
                 }
 

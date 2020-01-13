@@ -52,3 +52,28 @@ footer {
         max-width: rem(400px);
     }
 }
+
+.layout--img-w-quote {
+    position: relative;
+    max-width: rem(400px);
+    margin: 0 auto;
+
+    blockquote {
+        padding: 1rem 1rem 1rem 3rem;
+        position: absolute;
+        top: 0;
+        color: map-get($colors, red);
+        background-color: rgba(map-get($colors, off-white), .25);
+        z-index: 1;
+        font-weight: 500;
+
+        &::before {
+            content: "\"";
+            font-size: 5rem;
+            font-family: cursive;
+            position: absolute;
+            z-index: 1;
+            left: .5rem;
+        }
+    }
+}
