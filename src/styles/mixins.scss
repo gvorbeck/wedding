@@ -224,7 +224,7 @@
 $breakpoints: (
     1: 320px,
     2: 768px,
-    3: 1024px
+    3: 1200px
 );
 
 @mixin media($size) {
@@ -245,8 +245,14 @@ $breakpoints: (
             @content;
         }
     }
-    @else if $size == l {
+    @if $size == l {
         @media only screen and (min-width: map-get($breakpoints, 3)) {
+            @content;
+        }
+    }
+
+    @else if is-number($size) {
+        @media only screen and (min-width: #{rem($size)}) {
             @content;
         }
     }

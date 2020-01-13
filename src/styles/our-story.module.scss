@@ -13,6 +13,11 @@
         .img {
             width: 125%;
             left: -12.5%;
+
+            // @include media(l) {
+            //     // This is so that the red line does not go over the woman's face.
+            //     left: -5%;
+            // }
         }
     }
 }

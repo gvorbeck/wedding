@@ -10,3 +10,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@function is-number($value) {
+  @return type-of($value) == 'number';
+}

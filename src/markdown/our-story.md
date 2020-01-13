@@ -1,6 +1,11 @@
 ---
 title: "Our Story"
 ---
+<div class="layout--img-override">
+
+![Krishanti & Garrett](../images/us_circle.png)
+
+</div>
 
 * ### Hi I'm Garrett, and holy shit, you're in a punk band? ###
 
