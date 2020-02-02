@@ -16,7 +16,7 @@ title: "Schedule"
 * ## Ceremony ##
 
    **Saturday, September 5, 2020**  
-   2:30 pm  
+   2:00 pm  
    *Unionville Vineyards  
    9 Rocktown Road  
    Ringoes, NJ 08551*  
