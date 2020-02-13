@@ -19,7 +19,11 @@ title: "Travel"
 
 * ## Hotel ##
 
-   We're working on securing a hotel block for our guests with transportation to and from venue.
+   The Westin Princeton at Forrestal Village  
+   201 Village Boulevard  
+   Princeton, New Jersey 08540
+
+   We're securing a hotel block for our guests with transportation to and from venue.
 
    Check back soon for more information.
 
