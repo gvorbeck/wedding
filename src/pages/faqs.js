@@ -25,7 +25,10 @@ export default ({ data }) => (
                             <li>
                                 <dl>
                                     <dt><h2>{question.q}</h2></dt>
-                                    <dd><p>{question.a}</p></dd>
+                                    <dd>
+										<p>{question.a}</p>
+										{question.link && <p><a href={question.link} title="Hotel Block" target="_blank" rel="noreferrer">Hotel Block</a></p>}
+									</dd>
                                 </dl>
                             </li>
                         )}
@@ -46,6 +49,7 @@ export const query = graphql`
             questions {
               q
               a
+			  link
             }
           }
           html

@@ -35,12 +35,3 @@ title: "Schedule"
    Semi-Formal Attire
 
    Time to eat and get down! Join us for cocktails, performances, dinner, and dancing. Our reception will be outdoors in a tent until sunset, after which we will move down to the wine cellar for more dancing!
-
-* ## Farewell Brunch ##
-
-   **Sunday, June 19th, 2021**  
-   *Time TBD*
-   *Location TBD*  
-   Casual Attire
-
-   We’ll all need some coffee and food as we recover from partying our faces off the night before. And we’ll want to bid all of our guests farewell in the light of day – all are welcome!
