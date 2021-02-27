@@ -4,7 +4,7 @@ title: "Schedule"
 
 * ## Welcome Dinner ##
 
-   **Friday, September 4, 2020**  
+   **Friday, June 18th, 2021**  
    6:00 pm - 9:00 pm  
    *Location TBD*  
    Casual Attire
@@ -15,7 +15,7 @@ title: "Schedule"
 
 * ## Ceremony ##
 
-   **Saturday, September 5, 2020**  
+   **Saturday, June 19th, 2021**  
    2:00 pm  
    *Unionville Vineyards  
    9 Rocktown Road  
@@ -27,7 +27,7 @@ title: "Schedule"
 
 * ## Reception ##
 
-   **Saturday, September 5, 2020**  
+   **Saturday, June 19th, 2021**  
    5:00 pm - 10:00 pm  
    *Unionville Vineyards  
    9 Rocktown Road  
@@ -38,7 +38,7 @@ title: "Schedule"
 
 * ## Farewell Brunch ##
 
-   **Sunday, September 6, 2020**  
+   **Sunday, June 19th, 2021**  
    Some time in the AM  
    *Location TBD*  
    Casual Attire
