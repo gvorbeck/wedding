@@ -39,7 +39,7 @@ title: "Schedule"
 * ## Farewell Brunch ##
 
    **Sunday, June 19th, 2021**  
-   Some time in the AM  
+   *Time TBD*
    *Location TBD*  
    Casual Attire
 
