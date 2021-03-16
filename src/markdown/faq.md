@@ -14,5 +14,5 @@ questions:
   a: While we love your children, our wedding is going to be an adults-only event. We appreciate you making arrangements ahead of time, and gladly welcome kiddos to our welcome reception!
 - q: Do you have a hotel block for guests?
   a: Yes we do!
-  link: 'https://www.marriott.com/events/start.mi?id=1581619312799&key=GRP'
+  link: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1615915908390&key=GRP&app=resvlink'
 ---

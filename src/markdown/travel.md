@@ -24,7 +24,7 @@ title: "Travel"
    Princeton, New Jersey 08540
 
    We've secured a block of hotel rooms at a discounted rate for our traveling guests:
-   <a href="https://www.marriott.com/events/start.mi?id=1581619312799&key=GRP" target="\_blank" rel="noopener noreferrer" title="Hotel block for Westin Princeton">Hotel Block</a>
+   <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1615915908390&key=GRP&app=resvlink" target="\_blank" rel="noopener noreferrer" title="Hotel block for Westin Princeton">Hotel Block</a>
 
 * ## Airport ##
 

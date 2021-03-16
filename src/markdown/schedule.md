@@ -4,7 +4,7 @@ title: "Schedule"
 
 * ## Welcome Dinner ##
 
-   **Friday, June 18th, 2021**  
+   **Friday, October 8th, 2021**  
    6:00 pm - 9:00 pm  
    *Location TBD*  
    Casual Attire
@@ -15,7 +15,7 @@ title: "Schedule"
 
 * ## Ceremony ##
 
-   **Saturday, June 19th, 2021**  
+   **Saturday, October 9th, 2021**  
    2:00 pm  
    *Unionville Vineyards  
    9 Rocktown Road  
@@ -27,7 +27,7 @@ title: "Schedule"
 
 * ## Reception ##
 
-   **Saturday, June 19th, 2021**  
+   **Saturday, October 10th, 2021**  
    5:00 pm - 10:00 pm  
    *Unionville Vineyards  
    9 Rocktown Road  
