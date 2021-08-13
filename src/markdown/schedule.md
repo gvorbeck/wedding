@@ -5,10 +5,10 @@ title: "Schedule"
 * ## Welcome Event ##
 
    **Friday, October 8th, 2021**  
-   5:00 pm - 7:00 pm
-   *Brick House Tavern + Tap
-   3569 US Hwy-1
-   Princeton, NJ 08540 *
+   5:00 pm - 7:00 pm  
+   *Brick House Tavern + Tap  
+   3569 US Hwy-1  
+   Princeton, NJ 08540*  
    Casual Attire
 
    We’re excited to welcome all of our guests the night before at a casual get together – all are welcome to join us!
