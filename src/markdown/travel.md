@@ -25,6 +25,8 @@ title: "Travel"
 
    We've secured a block of hotel rooms at a discounted rate for our traveling guests:
    <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1615915908390&key=GRP&app=resvlink" target="\_blank" rel="noopener noreferrer" title="Hotel block for Westin Princeton">Hotel Block</a>
+   
+   For those staying at the hotel, we will be providing a shuttle service to/from Unionville Vineyards leaving the afternoon of the wedding at **1:20pm**.
 
 * ## Airport ##
 
@@ -38,6 +40,6 @@ title: "Travel"
 
    ### NJ Transit ###
 
-   If you're coming to our wedding from the Newark airport or NYC, take a southbound __Northeast Corridor (NEC)__ train to the __Princeton Junction Station__. This train can be picked up at both __New York Penn Station__ and __Newark Airport train station__.
+   If you're coming to our wedding from Newark airport or NYC, take a southbound __Northeast Corridor (NEC)__ train to the __Princeton Junction Station__. This train can be picked up at both __New York Penn Station__ and __Newark Airport train station__.
 
    Taking the train from NY Penn Station will require about 1.5 hours to reach Princeton Junction Station.
