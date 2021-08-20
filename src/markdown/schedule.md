@@ -29,7 +29,7 @@ title: "Schedule"
 
 * ## Reception ##
 
-   **Saturday, October 10th, 2021**  
+   **Saturday, October 9th, 2021**  
    4:30 pm - 10:00 pm  
    *Unionville Vineyards  
    9 Rocktown Road  
