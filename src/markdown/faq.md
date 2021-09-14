@@ -13,6 +13,6 @@ questions:
 - q: Are kids welcome?
   a: While we love your children, our wedding is going to be an adults-only event. We appreciate you making arrangements ahead of time, and gladly welcome kiddos to our welcome event!
 - q: Do you have a hotel block for guests?
-  a: Yes we do!
+  a: Yes we do! We recently expanded the block and so you may be required to book both nights separately, but we've been assured that it wont require you to change rooms between nights.
   link: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1615915908390&key=GRP&app=resvlink'
 ---
