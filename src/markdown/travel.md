@@ -22,6 +22,8 @@ title: "Travel"
    The Westin Princeton at Forrestal Village  
    201 Village Boulevard  
    Princeton, New Jersey 08540
+   
+   UPDATE: We've expanded our hotel block. This may require nights to be booked separately, but it wont mean you have to change rooms between nights.
 
    We've secured a block of hotel rooms at a discounted rate for our traveling guests:
    <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1615915908390&key=GRP&app=resvlink" target="\_blank" rel="noopener noreferrer" title="Hotel block for Westin Princeton">Hotel Block</a>
